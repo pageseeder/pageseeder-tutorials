@@ -1,0 +1,13 @@
+/**
+ * Specific styles for document type 'review'
+ *
+ * Part of PageSeeder tutorial 'How to customize the style of PSML documents'
+ */
+
+/* To inherit all the default PageSeeder PSML styles */
+@import url(../../../../weborganic/document/css/psml-content.css);
+
+/* To inherit all the default PageSeeder PSML styles */
+.psml-document h1 { color: blueviolet }
+.psml-document h2 { background: yellow }
+.psml-document p  { border: 1px dotted charcoal }
