@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<document-config>
+  <publishing override="true">
+    <action type="publish">
+      <source type="document" extension="psml" />
+      <target name="ps-publish-website-document">
+        <description>Publish document to website</description>
+      </target>
+    </action>
+  </publishing>
+</document-config>

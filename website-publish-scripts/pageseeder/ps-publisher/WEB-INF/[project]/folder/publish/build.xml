@@ -1,0 +1,67 @@
+<project name="pageseeder-publish-website-folder" xmlns:ps="antlib:com.pageseeder.external.ant">
+ 
+  <!-- Publish config properties -->
+  <property name="pswebsiteconfig.basedir" location="../../Publish/config"/>
+
+  <target name="ps-publish-website-folder">
+
+    <!-- Configure PageSeeder -->
+    <ps:config />
+
+    <!-- Load Website Properties -->
+    <loadproperties srcFile="${pswebsiteconfig.basedir}/website-pbs.properties" />
+
+    <!-- Cleaning working directory -->
+    <echo message="Cleaning working directories" />
+    <delete dir="${ps.config.default.working}/export" includes="*,**" includeemptydirs="true" />
+
+    <!-- Creating a working directory -->
+    <echo message="Creating working directories" />
+    <mkdir dir="${ps.config.default.working}/export" />
+
+    <!-- Export -->
+    <echo message="Exporting folder ${ps.config.default.uri.path}" />
+    <ps:export src="${ps.config.default.uri.path}" context="${ps.config.default.group.folder}" dest="${ps.config.default.working}/export" failonerror="false">
+    </ps:export>
+    
+    <!-- Delete PSML folder-->
+    <echo message="Create folder ${ftp.webapp}/WEB-INF/psml${ps.config.default.uri.path.no.group} in target folder (if doesn't exists)" />
+    <ftp server="${ftp.server}" userid="${ftp.userid}" password="${ftp.password}" action="mkdir" depends="yes" verbose="yes" passive="yes"
+        remotedir="${ftp.webapp}/WEB-INF/psml${ps.config.default.uri.path.no.group}">  
+    </ftp>
+    
+    <echo message="Delete all PSML files under ${ftp.webapp}/WEB-INF/psml${ps.config.default.uri.path.no.group}" />
+    <ftp server="${ftp.server}" userid="${ftp.userid}" password="${ftp.password}" action="rmdir" depends="yes" verbose="yes" passive="yes" skipFailedTransfers="true" ignoreNoncriticalErrors="true"
+         remotedir="${ftp.webapp}/WEB-INF/psml${ps.config.default.uri.path.no.group}">
+      <fileset includes="**"/>
+    </ftp>
+    
+    <!-- Delete non-PSML folder-->
+    <echo message="Create folder ${ftp.webapp}${ps.config.default.uri.path.no.group} in target folder (if doesn't exists)" />
+    <ftp server="${ftp.server}" userid="${ftp.userid}" password="${ftp.password}" action="mkdir" depends="yes" verbose="yes" passive="yes"
+        remotedir="${ftp.webapp}${ps.config.default.uri.path.no.group}"/>  
+    
+    <echo message="Delete all non PSML files under ${ftp.webapp}${ps.config.default.uri.path.no.group}" />
+    <ftp server="${ftp.server}" userid="${ftp.userid}" password="${ftp.password}" action="rmdir" depends="yes" verbose="yes" passive="yes" skipFailedTransfers="true" ignoreNoncriticalErrors="true"
+         remotedir="${ftp.webapp}${ps.config.default.uri.path.no.group}">
+      <fileset includes="**"/>
+    </ftp>
+    
+    <!-- Publishing PSML folder -->
+    <echo message="Publishing all PSML files to website ${ftp.webapp}/WEB-INF/psml" />
+    <ftp server="${ftp.server}" userid="${ftp.userid}" password="${ftp.password}" depends="yes" verbose="yes" passive="yes" remotedir="${ftp.webapp}/WEB-INF/psml">  
+      <fileset dir="${ps.config.default.working}/export" includes="**/*.psml" excludes="META-INF/**" />
+    </ftp>
+    
+    <!-- Publishing all non-PSML files to Website -->
+    <echo message="Publishing all non-PSML files to website"/>
+    <ftp server="${ftp.server}" userid="${ftp.userid}" password="${ftp.password}" depends="yes" verbose="yes" passive="yes" remotedir="${ftp.webapp}">
+      <fileset dir="${ps.config.default.working}/export" excludes="**/*.psml,META-INF/**" />
+    </ftp>
+       
+    <echo message="Cleaning working directories" />
+    <delete dir="${ps.config.default.working}" includes="*,**" includeemptydirs="true" />
+    
+    <echo message="Publishing folder ${ps.config.default.uri.path} to website - Complete"/>
+    
+  </target>

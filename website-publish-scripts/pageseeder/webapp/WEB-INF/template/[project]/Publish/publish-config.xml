@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<publishing>
+  <action type="publish">
+    <source type="document" extension="psml" />
+    <target name="ps-publish-website-document">
+      <description>Publish document to website</description>
+    </target>
+  </action>
+  <action type="publish">
+    <source type="folder"/>
+    <target name="ps-publish-website-folder">
+      <description>Publish folder to website</description>
+    </target>
+  </action>
+</publishing>

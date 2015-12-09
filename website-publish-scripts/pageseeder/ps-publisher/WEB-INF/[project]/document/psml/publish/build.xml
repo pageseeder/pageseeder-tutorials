@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Publish -->
+<project name="pageseeder-publish-website-document" xmlns:ps="antlib:com.pageseeder.external.ant">
+  <!-- Publish config properties -->
+  <property name="pswebsiteconfig.basedir" location="../../Publish/config"/>
+  <!-- Document publish -->
+  <target name="ps-publish-website-document">
+    <!-- Configure PageSeeder -->
+    <ps:config />
+    <!-- Load Website Properties -->
+    <loadproperties srcFile="${pswebsiteconfig.basedir}/website.properties"/>
+    <!-- Create working folder -->
+    <mkdir dir="${ps.config.default.working}/export" />
+    <!-- Export -->    
+    <ps:export src="${ps.config.default.uri.path}" dest="${ps.config.default.working}/export" context="${ps.config.default.group.folder}"/>
+    <!-- FTP all PSML files to website root -->
+    <ftp server="${ftp.server}" userid="${ftp.userid}" password="${ftp.password}" remotedir="${ftp.webapp}/WEB-INF/psml">
+      <fileset dir="${ps.config.default.working}/export" includes="**/*.psml" excludes="META-INF/**" />
+    </ftp>    
+    <!-- FTP all non-PSML files to website root -->    
+    <ftp server="${ftp.server}" userid="${ftp.userid}" password="${ftp.password}" remotedir="${ftp.preview.webapp}">
+      <fileset dir="${ps.config.default.working}/export" excludes="**/*.psml,META-INF/**" />
+    </ftp>
+    <!-- local working folder clean-up -->
+    <delete dir="${ps.config.default.working}" includes="*,**" includeemptydirs="true" />
+    <!-- Publish completed -->
+    <echo message="Publishing document ${ps.config.default.uri.path} to Berlioz - Complete"/>  
+  </target>
+</project>
