@@ -23,31 +23,32 @@
   <xsl:template match="film">
     <document type="film" level="portable" >
       <documentinfo>
-        <uri title="{display_title}" />
+        <uri title="{title}" />
       </documentinfo>
         
       <section id="title">
         <fragment id="1">
-          <heading level="1"><xsl:value-of select="display_title"/></heading>
+          <heading level="1"><xsl:value-of select="title"/></heading>
         </fragment>
       </section>
         
       <section id="details">
         <properties-fragment id="2">
-          <property name="opening_date" title="Opening date" value="{opening_date}" datatype="date" />
-          <property name="directed_by" title="Directed by" value="{directed_by}"  />
+          <property name="release-date" title="Release date" value="{released}" datatype="date" />
+          <property name="director" title="Director" value="{director/name}"  />
           <property name="classification" title="Classification" value="{rating}" />
           <property name="genre" title="Genre" count="n">
-            <xsl:for-each select="genre">
-              <value><xsl:value-of select="."/></value>
+            <xsl:for-each select="tokenize(genre,',')">
+              <value><xsl:value-of select="normalize-space(.)"/></value>
             </xsl:for-each>
           </property>
+          <property name="country" title="Country" value="{country}" />
         </properties-fragment>
       </section>
 
-      <section id="about" title="About">
+      <section id="summary" title="Summary">
         <fragment id="3">
-          <xsl:apply-templates select="about/p" />
+          <xsl:apply-templates select="summary/p" />
         </fragment>
       </section>
 
@@ -68,10 +69,17 @@
     </para>
   </xsl:template>
 
+  <!-- Writers -->
+  <xsl:template match="writer">
+    <inline label="writer">
+      <xsl:value-of select="name" />
+    </inline>
+  </xsl:template>
+
   <!-- Actors -->
   <xsl:template match="actor">
     <inline label="actor">
-      <xsl:apply-templates />
+      <xsl:value-of select="name" />
     </inline>
   </xsl:template>
   
