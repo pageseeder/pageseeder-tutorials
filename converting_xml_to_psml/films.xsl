@@ -11,15 +11,17 @@
   <xsl:template match="/">
     <xsl:for-each select="//film">
      <xsl:variable name="path" select="concat('film-',position(),'.psml')" />
+    <!-- List films for checking -->
+    <xsl:value-of select="$path"/><xsl:text> = </xsl:text><xsl:value-of select="title"/><xsl:text>&#xA;</xsl:text>
      <xsl:result-document href="{$path}" method="xml" indent="yes">
        <xsl:apply-templates select="."/>
      </xsl:result-document>
     </xsl:for-each>
-    <!-- output total for checking -->
+    <!-- Output total for checking -->
     <xsl:text>Converted </xsl:text><xsl:value-of select="count(//film)"/><xsl:text> films.</xsl:text>
   </xsl:template>
   
-  <!-- film document -->
+  <!-- Film document -->
   <xsl:template match="film">
     <document type="film" level="portable" >
       <documentinfo>
@@ -34,8 +36,7 @@
         
       <section id="details">
         <properties-fragment id="2">
-          <property name="release-date" title="Release date" value="{released}" datatype="date" />
-          <property name="director" title="Director" value="{director/name}"  />
+          <property name="year" title="Year" value="{substring-before(released,'-')}" />
           <property name="classification" title="Classification" value="{rating}" />
           <property name="genre" title="Genre" count="n">
             <xsl:for-each select="tokenize(genre,',')">
@@ -43,6 +44,26 @@
             </xsl:for-each>
           </property>
           <property name="country" title="Country" value="{country}" />
+          <property name="director" title="Director" count="n">
+            <xsl:for-each select="distinct-values(.//director/name)">
+              <value><xsl:value-of select="."/></value>
+            </xsl:for-each>
+          </property>
+          <property name="producer" title="Producer" count="n">
+            <xsl:for-each select="distinct-values(.//producer/name)">
+              <value><xsl:value-of select="."/></value>
+            </xsl:for-each>
+          </property>
+          <property name="writer" title="Writer" count="n">
+            <xsl:for-each select="distinct-values(.//writer/name)">
+              <value><xsl:value-of select="."/></value>
+            </xsl:for-each>
+          </property>
+          <property name="actor" title="Actor" count="n">
+            <xsl:for-each select="distinct-values(.//actor/name)">
+              <value><xsl:value-of select="."/></value>
+            </xsl:for-each>
+          </property>
         </properties-fragment>
       </section>
 
@@ -62,11 +83,25 @@
     </document>
   </xsl:template>
 
-  <!-- Paragraphs -->
+  <!-- paragraphs -->
   <xsl:template match="p">
     <para>
       <xsl:apply-templates />
     </para>
+  </xsl:template>
+
+  <!-- Directors -->
+  <xsl:template match="director">
+    <inline label="director">
+      <xsl:value-of select="name" />
+    </inline>
+  </xsl:template>
+
+  <!-- Producers -->
+  <xsl:template match="producer">
+    <inline label="producer">
+      <xsl:value-of select="name" />
+    </inline>
   </xsl:template>
 
   <!-- Writers -->
