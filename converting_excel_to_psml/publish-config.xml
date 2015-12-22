@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+  The publish config allows you to customize the ANT scripts that can be run
+  by the publish engine. Using <publishing override="true"> will replace all
+  default actions with these otherwise they are added.
+  
+  Each <action> should include:
+  - @type         = the type of action - import|export|publish|process|upload|upload-preview
+  - <source>      = what source object this action applies to
+     @type        = the type of source - group|folder|document
+     @extension   = the filename extension of the source (only applies to document)
+  - <target>      = each target in the ANT script the user can run
+     @name        = the name of the target
+     @perspective = only display target in this perspective (optional)
+  
+  Each <target> should include:
+  - <description> = a description of this action for the user interface
+  - <param>       = each parameter the user can specify
+     @type        = the type of value - text|date|number|checkbox|select
+     @label       = the label for the user interface
+     (see documentation for more optional attributes/elements)
+  -->
+<publishing>
+  <action type="upload">
+    <source type="document" extension="xlsx" />
+    <target name="upload-excel">
+      <description>Upload as PSML</description>
+    </target>
+  </action>  
+</publishing>
