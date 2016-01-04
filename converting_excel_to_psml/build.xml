@@ -1,15 +1,16 @@
 <project name="upload-excel" default="upload-excel" xmlns:ps="antlib:com.pageseeder.external.ant"       xmlns:psx="antlib:com.pageseeder.ant.xlsx">
 
-  <!-- Define the task in ANT -->
+  <!-- Adding the jars -->
   <path id="this.classpath">
     <fileset dir="../../../lib">
       <include name="ps-ant-excel-*.jar" />
     </fileset>
   </path>
+  <!-- Defining the excel ant tasks -->
   <taskdef uri="antlib:com.pageseeder.ant.xlsx" classpathref="this.classpath"/>
 
+  <!-- It is our Ant Publisher Task Logic -->
   <target name="upload-excel">
-    
     <ps:config />
     <echoxml><progress percent="5" /></echoxml>
 
@@ -29,7 +30,7 @@
       servletPrefix="${ps.config.default.servlet.prefix}" sitePrefix="${ps.config.default.site.prefix}">
     </ps:ps-upload-get>
     
-    <echo>Creating assessments documents</echo>
+    <echo>Creating Converted documents (Excel to PSML)</echo>
     <echoxml><progress percent="15" /></echoxml>
     <!-- we need to create specific filenames so use splitlevel=worksheet and produce our own assessments documents -->
     <psx:import-spreadsheet src="${download}/${ps.config.default.upload.filename}" dest="${output}" working="${temp}"
