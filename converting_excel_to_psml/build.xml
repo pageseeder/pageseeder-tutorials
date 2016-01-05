@@ -45,5 +45,11 @@
                       servletPrefix="${ps.config.default.servlet.prefix}" sitePrefix="${ps.config.default.site.prefix}">
       <fileset dir="${output}" includes="*.psml" />
     </ps:ps-upload-put>
+    
+    <!-- Cleaning working directory -->
+    <echo message="Cleaning working directories" />
+    <delete dir="${download}" includes="*,**" includeemptydirs="true" />
+    <delete dir="${output}" includes="*,**" includeemptydirs="true" />
+    <delete dir="${temp}" includes="*,**" includeemptydirs="true" />
   </target>
 </project>
