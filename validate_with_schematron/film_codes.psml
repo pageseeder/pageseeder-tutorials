@@ -1,0 +1,28 @@
+<document level="portable">
+<section id="title">
+  <fragment id="1">
+    <heading level="1">film codes</heading>
+  </fragment>
+</section>
+<section id="rules">
+  <fragment id="classification-codes">
+    <heading level="2">classification-codes</heading>
+    <list>
+      <item>P</item>
+      <item>PG</item>
+      <item>M</item>
+      <item>R18+</item>
+    </list>
+  </fragment>
+  <fragment id="genre-codes">
+    <heading level="2">genre-codes</heading>
+    <list>
+      <item>Action</item>
+      <item>Drama</item>
+      <item>Thriller</item>
+      <item>Romance</item>
+      <item>Comedy</item>
+    </list>
+  </fragment>
+</section>
+</document>
