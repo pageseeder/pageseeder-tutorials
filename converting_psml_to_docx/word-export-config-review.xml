@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<config>
+	<toc generate="false">
+	</toc>
+	<default>
+		<defaultparagraphstyle wordstyle="Body Text" />
+		<defaultcharacterstyle wordstyle="Default Paragraph Font" />
+		<comments generate="false" />
+	</default>
+	<elements>
+		<block default="none">
+		</block>
+		<inline default="none">
+		</inline>
+		<tables default="Table Normal">
+		</tables>
+		<heading>
+			<level value="1" wordstyle="Film Title">
+			</level>
+		</heading>
+		<para>
+			<indent level="0" wordstyle="Body Text">
+			</indent>
+		</para>
+	</elements>
+</config>
