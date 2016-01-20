@@ -42,7 +42,7 @@
     <sch:rule context="property[@name='genre']/value">
        <sch:let name="genre-list" value="$code-list-document//fragment[@id='genre-codes']"/>
        <sch:assert test="$genre-list//item=current()">
-         Fragment '<sch:value-of select="../@id"/>' -  genre '<sch:value-of select="current()"/>' is not valid. 
+         Fragment '<sch:value-of select="../../@id"/>' -  genre '<sch:value-of select="current()"/>' is not valid. 
          </sch:assert>
      </sch:rule>
 	 
