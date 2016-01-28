@@ -1,0 +1,104 @@
+<document level="portable">
+<section id="title">
+  <fragment id="1">
+    <heading level="1">title configuration codes</heading>
+  </fragment>
+</section>
+<section id="rules">
+  <fragment id="assess-available-test-type">
+    <heading level="2">assess-available-test-type</heading>
+    <list>
+      <item>Get Ready</item>
+      <item>Checkpoint</item>
+      <item>Review</item>
+    </list>
+  </fragment>
+  <fragment id="lic-type">
+    <heading level="2">lic-type</heading>
+    <list>
+      <item>Teacher</item>
+      <item>Student</item>
+      <item>Evaluation</item>
+      <item>Complimentary</item>
+    </list>
+  </fragment>
+  <fragment id='obook-dictool-available-option'>
+    <heading level="2">obook-dictool-available-option</heading>
+    <list>
+      <item>interactive</item>
+      <item>none</item>
+      <item>search</item>
+    </list>
+  </fragment>
+  <properties-fragment id='extras-inter-obook-type'>    
+      <property name="extras-inter-obook-A" title="extras-inter-obook-A" value="My Maths 7"></property>
+      <property name="extras-inter-obook-B" title="extras-inter-obook-B" value="My Maths 8"></property>
+      <property name="extras-inter-obook-C" title="extras-inter-obook-C" value="My Maths 9"></property>
+      <property name="extras-inter-obook-D" title="extras-inter-obook-D" value="My Maths 10"></property>
+  </properties-fragment>
+  <fragment id='content-tab-section1-labels'>
+    <heading level="2">content-tab-section1-labels</heading>
+    <list>
+      <item>contents</item>
+    </list>
+  </fragment>
+  <fragment id='content-tab-section2-labels'>
+    <heading level="2">content-tab-section2-labels</heading>
+    <list>
+      <item>index</item>
+    </list>
+  </fragment>
+  <fragment id='assess-tab-labels'>
+    <heading level="2">assess-tab-labels</heading>
+    <list>
+      <item>assess</item>
+    </list>
+  </fragment>
+  <fragment id='update1-labels'>
+    <heading level="2">update1-labels</heading>
+    <list>
+      <item>to do</item>
+    </list>
+  </fragment>
+  <fragment id='update2-labels'>
+    <heading level="2">update2-labels</heading>
+    <list>
+      <item>recent activity</item>
+      <item>assess activity</item>
+    </list>
+  </fragment>
+  <fragment id='rich-assets-tab-labels'>
+    <heading level="2">rich-assets-tab-labels</heading>
+    <list>
+      <item>extras</item>
+      <item>resources</item>
+      <item>Resources</item>
+    </list>
+  </fragment>
+  <fragment id='notes-labels'>
+    <heading level="2">notes-labels</heading>
+    <list>
+      <item>notes</item>      
+    </list>
+  </fragment>
+  <fragment id='classmgmnt-labels'>
+    <heading level="2">classmgmnt-labels</heading>
+    <list>
+      <item>class admin</item>      
+    </list>
+  </fragment>
+  <fragment id='extras-tab-labels'>
+    <heading level="2">extras-tab-labels</heading>
+    <list>
+      <item>extras</item>
+      <item>Resources</item>      
+    </list>
+  </fragment>
+  <fragment id='myextras-labels'>
+    <heading level="2">myextras-labels</heading>
+    <list>
+      <item>My Teacher Extras</item>
+    </list>
+  </fragment>
+</section>
+</document>
