@@ -1,0 +1,105 @@
+/*
+ * Assemble and deploy the Web application. 
+ */
+buildscript {
+  repositories {
+    jcenter()
+    maven { url 'http://dl.bintray.com/robfletcher/gradle-plugins' }
+  }
+  dependencies {
+    classpath (
+      'org.akhikhl.gretty:gretty:1.2.4',
+      'org.hidetake:gradle-ssh-plugin:1.1.4',
+      'com.github.robfletcher:compass-gradle-plugin:+',
+      'com.github.jruby-gradle:jruby-gradle-plugin:0.1.+'
+    )
+  }
+}
+
+// War + Gretty
+apply plugin: 'war'
+apply plugin: 'org.akhikhl.gretty'
+apply plugin: 'com.github.robfletcher.compass'
+apply plugin: 'org.hidetake.ssh'
+
+// Dependencies of the project
+repositories {
+  maven { url 'http://dl.bintray.com/pageseeder/maven' }
+  jcenter()
+}
+
+// Dependencies for your production and test code
+dependencies {
+
+  // Deployed on Berlioz
+  runtime (
+    'org.slf4j:slf4j-api:1.7.12',
+    'org.pageseeder.berlioz:pso-berlioz:0.10.2',
+    'org.pageseeder.bastille:pso-bastille:0.9.1',
+    'org.pageseeder.berlioz:pso-berlioz-flint:0.5.0-alpha.6-SNAPSHOT',
+    'org.pageseeder.xmlwriter:pso-xmlwriter:1.0.0',
+    'commons-io:commons-io:2.4',
+    'net.sf.saxon:Saxon-HE:9.6.0-7',
+    'ch.qos.logback:logback-core:1.0.11',
+    'ch.qos.logback:logback-classic:1.0.11',
+    'org.pageseeder.berlioz:pso-berlioz-kickstart:0.2.0',
+    'org.pageseeder.flint:pso-flint:5.0.0-alpha.9',
+    'org.pageseeder.cobble:pso-cobble:0.3.1'
+  )
+
+}
+
+// Property for local Jetty dev server
+gretty {
+  jvmArgs = ["-Dberlioz.mode=${localMode}"]
+  host = 'sample.localhost'
+  httpPort = 8099
+  httpsEnabled = true
+  httpsPort = 8444
+  contextPath = '/'
+  servletContainer = 'jetty9'
+}
+
+// Compass to convert Sass file to CSS
+compass {
+  sassDir = file('src/main/sass')
+  cssDir = file('src/main/webapp/style')
+  noLineComments = true
+  outputStyle = 'compact'
+}
+
+
+
+task deployLocalStatic << {
+  copy {
+    from webAppDirName
+    into localWebapp
+    exclude "${webAppDirName}/WEB-INF/config/*-*.xml"
+  }
+  copy {
+    from "${webAppDirName}/WEB-INF/config"
+    into "${localWebapp}/WEB-INF/config"
+    include "*-${localMode}.xml"
+  }
+}
+
+task deployLocalClasses(type: Copy, group: 'allette') {
+  description = 'Copy the classes with the local WebApp'
+  from classes
+  into "${localWebapp}/WEB-INF/classes"
+}
+
+task deployLocalLibs(type: Sync, group: 'allette') {
+  description = 'Sync the libraries with the local WebApp'
+  from configurations.runtime  - configurations.providedCompile
+  into "${localWebapp}/WEB-INF/lib"
+}
+
+task deployLocal (group: 'allette') {
+  description = 'Deploys the WebApp locally'
+  dependsOn compassCompile
+  dependsOn deployLocalStatic
+  dependsOn deployLocalClasses
+  dependsOn deployLocalLibs
+}
+

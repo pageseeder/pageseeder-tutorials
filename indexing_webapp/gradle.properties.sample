@@ -1,0 +1,4 @@
+localMode=local
+localWebapp=C:/Work/websites/webapps/movies
+localHost=movies.localhost
+localMaven=C:/Work/m2/repository

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE services PUBLIC "-//Berlioz//DTD::Services 1.0//EN" "http://www.weborganic.org/schema/berlioz/services-1.0.dtd">
+<!--
+  Berlioz Service configuration for the Movies Index Example.
+
+  @author  Jean-Baptiste Reure
+ -->
+<!-- Data related services -->
+<services group="default">
+
+  <!-- Search term -->
+  <service id="search" method="get">
+    <url pattern="/search"/>
+    <generator name="navigation" target="navigation"/>
+    <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"       target="html"/>
+    <generator class="org.pageseeder.berlioz.flint.GetIndexSummary" name="search-index"  target="main"/>
+    <generator class="org.pageseeder.berlioz.flint.BasicSearch"     name="basic-search"  target="main"/>
+  </service>
+
+  <!-- Browse index -->
+  <service id="browse" method="get">
+    <url pattern="/browse"/>
+    <generator name="navigation" target="navigation"/>
+    <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"       target="html"/>
+    <generator class="org.pageseeder.berlioz.flint.GetFacets"       name="browse-facets" target="main">
+      <parameter name="facets"     value="{facets},country,classification,genre" />
+      <parameter name="max-number" value="50" />
+    </generator>
+    <generator class="org.pageseeder.berlioz.flint.BasicSearch"     name="browse-search" target="main">
+      <parameter name="facets"     value="{facets},country,classification,genre" />
+      <parameter name="max-facets" value="50" />
+      <parameter name="field"      value="_visibility" />
+      <parameter name="term"       value="private" />
+      <parameter name="with"       value="{with}" />
+    </generator>
+  </service>
+
+  <!-- Search term -->
+  <service id="autosuggest" method="get">
+    <url pattern="/autosuggest"/>
+    <generator name="navigation" target="navigation"/>
+    <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"       target="html"/>
+    <generator name="autosuggest"  target="main"/>
+  </service>
+
+  <!-- Autosuggest -->
+  <service id="autosuggest-results" method="get">
+    <url pattern="/fields/{field}/autosuggest"/>
+    <url pattern="/autosuggest/{name}"/>
+    <generator name="navigation" target="navigation"/>
+    <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"     target="html"/>
+    <generator class="org.pageseeder.berlioz.flint.AutoSuggest"     name="autosuggest" target="main"/>
+  </service>
+
+</services>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="2.5"
+           xmlns="http://java.sun.com/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <display-name>Team Website</display-name>
+
+  <!-- Servlet Declarations =============================================== -->
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+  <!-- InitServlet                                                          -->
+  <!--                                                                      -->
+  <!-- Initialisation parameters:                                           -->
+  <!--                                                                      -->
+  <!--  lifecycle-listener         Path to the login page                           -->
+  <!--                     [/login.html]                                    -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+  <servlet>
+    <servlet-name>Initialiser</servlet-name>
+    <servlet-class>org.pageseeder.berlioz.servlet.InitServlet</servlet-class>
+    <init-param>
+      <param-name>lifecycle-listener</param-name>
+      <param-value>org.pageseeder.berlioz.flint.lifecycle.FlintLifecycleListener</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <!-- Welcome files ========================================================================== -->
+
+  <!--
+    Welcome file list
+    Ensure that your Web Application server allows Servlets to provide Welcome files.
+  -->
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+
+  <!-- Error Handling ========================================================================= -->
+
+  <!-- 401: Unauthorized -->
+  <error-page>
+    <error-code>401</error-code>
+    <location>/login.html</location>
+  </error-page>
+
+</web-app>
