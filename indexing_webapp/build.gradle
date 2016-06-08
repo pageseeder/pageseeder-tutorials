@@ -36,7 +36,7 @@ dependencies {
     'org.slf4j:slf4j-api:1.7.12',
     'org.pageseeder.berlioz:pso-berlioz:0.10.2',
     'org.pageseeder.bastille:pso-bastille:0.9.1',
-    'org.pageseeder.berlioz:pso-berlioz-flint:0.5.0-alpha.6-SNAPSHOT',
+    'org.pageseeder.berlioz:pso-berlioz-flint:0.5.0-alpha.6',
     'org.pageseeder.xmlwriter:pso-xmlwriter:1.0.0',
     'commons-io:commons-io:2.4',
     'net.sf.saxon:Saxon-HE:9.6.0-7',
