@@ -1,0 +1,95 @@
+/**
+ * Contains all styles for components specific to the admin interfaces.
+ * (buttons, drop-downs, custom tables, etc...)
+ */
+ 
+/* ------------------------------------------------------------------------ *
+ * Tables                                                                   *
+ * ------------------------------------------------------------------------ */
+
+/*table*/.basic {
+  width: 100%; 
+  border-collapse: collapse;
+  font-size: 95%;
+
+  thead tr {
+    border: 1px solid #d7d7d7;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); 
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); 
+    background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+  }
+  tfoot tr {
+    border: 1px solid #d7d7d7;
+    background: #eee;
+    background: -moz-linear-gradient(top, #ddd 0%, #eee 50%); 
+    background: -webkit-linear-gradient(top, #ddd 0%,#eee 50%); 
+    background: linear-gradient(top, #ddd 0%,#eee 50%);
+  }
+  tbody tr {
+    border: 1px solid #d7d7d7;
+  }
+  td, th {
+    padding: .25rem .3125rem .3125rem
+  }
+  tfoot td {
+    font-weight: 600;
+  }
+}
+
+/*table*/.valuepairs {
+  width: 80%;
+  border-collapse: collapse;
+
+  thead tr {
+    border: 1px solid #d7d7d7;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); 
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); 
+    background: linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+  }
+  tbody tr {
+    border: 1px solid #d7d7d7
+  }
+  tbody tr:nth-child(odd) td {
+    background:#f7f7f7;
+  }
+  tr td {
+    text-align: left;
+    padding: 2px 4px;
+    width: 50%;
+  }
+
+}
+
+/* Sorted tables */
+table {
+
+	th.header {
+		cursor: pointer;
+    padding-right: 0.125rem;
+		&:after {
+	    content: '\00A0';
+	    font-family: 'FontAwesome';
+	    color: #333;
+	    display: inline-block;
+	    width: 1rem;
+      text-align: right;
+	  }
+	}
+
+	th.headerSortUp, th.headerSortDown {
+		background: -moz-linear-gradient(top, #e5e5e5 0%, #ffffff 100%);
+		background: -webkit-linear-gradient(top, #e5e5e5 0%,#ffffff 100%);
+		background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%);
+	}
+
+	th.headerSortUp:after {
+		content: ' \f0d7'; /* .fa-caret-down */
+	}
+
+	th.headerSortDown:after {
+		content: ' \f0d8'; /* .fa-caret-up */
+	}
+
+}

@@ -1,0 +1,151 @@
+/**
+ * Contains all layouts parts of the admin interfaces.
+ * (header, navigation, footer, etc...)
+ */
+
+/* ------------------------------------------------------------------------ *
+ * Header                                                                   *
+ * ------------------------------------------------------------------------ */
+
+header.header {
+  background: $header-bgcolor-top; /* Old browsers */
+  background: -moz-linear-gradient(top,  $header-bgcolor-top 0%, $header-bgcolor-bottom 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  $header-bgcolor-top 0%, $header-bgcolor-bottom 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  $header-bgcolor-top 0%, $header-bgcolor-bottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.header-inner {
+
+  &:before {content: '\f008'; font-family: "FontAwesome"; color: rgba(255, 255, 255, 0.7); font-size: 3.5rem; float: left; margin-left: 30px; position: absolute;}
+
+  h1 {
+    margin:0; 
+    margin-left: 80px;
+    padding-top: 10px; 
+    line-height: 40px; 
+    color: white; 
+    text-shadow: 0 0 4px rgba(0,0,100,0.8); 
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: $font-stack;
+
+    sup {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,.3);
+      text-shadow: 0 0 4px rgba(0,0,100,0.8);
+      font-weight:300;
+    }
+  }
+
+  h2 {
+    margin:0;
+    margin-left: 80px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    color: white;
+    text-shadow: 0 0 4px rgba(0,0,100,0.8);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: $font-stack;
+
+    a {
+      color: #0094D7;
+      text-decoration: none;
+      var {
+        color: white;
+      }
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1px dotted 
+      }
+    }
+
+  }
+
+  h3 {
+    color: rgba(255,255,255,.9);
+    font-weight: 300;
+    float: right;
+    text-shadow: 0 0 4px rgba(0,0,100,0.8);
+    position: relative;
+    top: -18px;
+    font-size: 13px;
+  }
+
+}
+
+
+/* ------------------------------------------------------------------------ *
+ * Navigation                                                               *
+ * ------------------------------------------------------------------------ */
+
+.nav-wrapper {
+  box-shadow: 0 0 15px 3px rgba(0,0,0,.2);
+  border: 5px solid rgba(0,0,0,.1);
+  border-bottom: none;
+  background: $nav-bgcolor-bottom;
+}
+
+.primary-nav {
+  background: $nav-bgcolor-top;
+  background: -moz-linear-gradient(top, $nav-bgcolor-top 0%, $nav-bgcolor-bottom 100%);
+  background: -webkit-linear-gradient(top, $nav-bgcolor-top 0%, $nav-bgcolor-bottom 100%);
+  background: linear-gradient(top, $nav-bgcolor-top 0%, $nav-bgcolor-bottom 100%);
+
+  ul {
+    list-style-type: none; 
+    padding: 0 9px; 
+    margin: 0; 
+    height: 40px
+  }
+  li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    font-weight: 600;
+  }
+  li a {
+    display: block;
+    height: 40px;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(0,0,100,0.8);
+    transition: all .2s ease-in-out;
+  }
+  li a:hover {
+    background: rgba(0,0,0,.1);
+  }
+  li.active a {
+    background: rgba(0,0,0,.1);
+    box-shadow: inset 0 0 3px rgba(0,0,0,.2);
+  }
+  
+}
+
+/* ------------------------------------------------------------------------ *
+ * Main                                                                     *
+ * ------------------------------------------------------------------------ */
+
+.article-wrapper {
+  box-shadow: 0 0 15px 3px rgba(0,0,0,.2);
+  border: 5px solid rgba(0,0,0,.1);
+  border-top: none;
+  
+  article {
+    padding: 20px;
+    background: white;
+  }
+}
+
+/* ------------------------------------------------------------------------ *
+ * Footer                                                                   *
+ * ------------------------------------------------------------------------ */
+
+footer.footer p {
+  color: #999;
+  line-height: 2rem;
+  font-size: 80%;
+}
