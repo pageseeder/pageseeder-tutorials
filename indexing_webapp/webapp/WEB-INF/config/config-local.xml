@@ -16,8 +16,6 @@
         <movies    fields="title,actor,director"           result-fields="image,title,year,genre,country" />
         <usmovies  fields="title,actor,director"           result-fields="image,title,year,genre,country" weight="american-level:2" />
       </films>
-      <bios name="bios" path="/psml/content/bios" template="bios.xsl">
-      </bios>
     </index>
   </flint>
 </global>

@@ -16,7 +16,7 @@
   <h2>Basic search</h2>
   <div class="row collapse">
     <div class="small-12 columns search">
-      <xsl:variable name="searched" select="index-search/basic-query/base/term-parameter" />
+      <xsl:variable name="searched" select="index-search/basic-query/base/*" />
       <xsl:call-template name="search-form">
         <xsl:with-param name="fields"         select="../content[@name='search-index']//fields/field" />
         <xsl:with-param name="selected-field" select="if ($searched/field) then $searched/field else 'fulltext'" />

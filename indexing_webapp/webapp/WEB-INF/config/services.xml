@@ -10,6 +10,7 @@
 
   <!-- Search term -->
   <service id="search" method="get">
+    <url pattern="/"/>
     <url pattern="/search"/>
     <generator name="navigation" target="navigation"/>
     <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"       target="html"/>
@@ -29,8 +30,8 @@
     <generator class="org.pageseeder.berlioz.flint.BasicSearch"     name="browse-search" target="main">
       <parameter name="facets"     value="{facets},country,classification,genre" />
       <parameter name="max-facets" value="50" />
-      <parameter name="field"      value="_visibility" />
-      <parameter name="term"       value="private" />
+      <parameter name="field"      value="_creator" />
+      <parameter name="term"       value="berlioz" />
       <parameter name="with"       value="{with}" />
     </generator>
   </service>
