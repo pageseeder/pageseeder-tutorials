@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<publishing>
+  <action type="export">
+    <source type="document" extension="psml"/>
+    <target name="create-consolidated-pdf">
+      <description>Create PDF with Image Replacement</description>
+      <param label="Depth of cross references to consolidate:"   name="depth" type="select"   default="2" min="0" max="8" />
+      <param label="Generate table of contents (if applicable):" name="toc"   type="checkbox" default="false" />
+    </target>
+    <target name="create-consolidated-docx">
+      <description>Create DocX with Image Replacement</description>
+      <param label="Depth of cross references to consolidate:"
+                                                  name="depth"               type="select" default="2" min="0" max="8"/>
+      <param label="Choose Word core attributes:" name="manual-core"         type="select" default="Template"      perspective="developer">
+        <value>Template</value>
+        <value>Configuration</value>
+        <value>Manual</value>
+      </param>
+      <param label="Document creator:"             name="manual-creator"     type="text" default="PageSeeder"      perspective="developer"/>
+      <param label="Document revision:"            name="manual-revision"    type="text" default="1" pattern="\d+" perspective="developer"/>
+      <param label="Document creation date:"       name="manual-created"     type="text" default="Current Date"    perspective="developer">
+        <value>Current Date</value>
+        <value>PageSeeder Document Creation Date</value>
+      </param>
+      <param label="Document version:"             name="manual-version"     type="text" default="1.0"             perspective="developer"/>
+      <param label="Document category:"            name="manual-category"    type="text"                           perspective="developer"/>
+      <param label="Document title:"               name="manual-title"       type="text"                           perspective="developer"/>
+      <param label="Document subject:"             name="manual-subject"     type="text"                           perspective="developer"/>
+      <param label="Document description:"         name="manual-description" type="text"                           perspective="developer"/>
+    </target>
+  </action>
+</publishing>
