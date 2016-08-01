@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+
+<config version="0.4.18">
+
+  <core> <!-- Manual|Template|Config -->
+    <creator select="Pageseeder" />
+    <description select="Pageseeder" />
+    <subject select="Pageseeder Document" />
+    <title select="Default Title" />
+    <category select="No Category" />
+    <version select="1.0" />
+    <revision select="1" />
+<!--<created select="Pageseeder"/> currently using calculated values -->
+  </core>
+
+  <toc generate="true" style="TOC2">
+    <headings generate="true" select="1-9" /> <!-- 1|1-2|5-9|etc from 1 up to 9-->
+    <outline generate="true" select="1-9" /> <!-- 1|1-2|5-9|etc from 1 up to 9-->
+    <paragraph generate="false">
+      <style value="[word style]" indent="[indent level]" />
+      <!-- any paragraph style defined in the document with the corresponding TOC indent level  -->
+    </paragraph>
+  </toc>
+
+  <default>
+    <defaultparagraphstyle wordstyle="Body Text" />
+    <defaultcharacterstyle wordstyle="Default Paragraph Font" />
+    <comments generate="false" />
+  </default>
+
+
+  <elements>
+    <!-- default options:"generate-ps-style|none" -->
+    <!-- label options:"generate-ps-style|[name of style]" -->
+    <block default="generate-ps-style">
+
+    </block>
+    
+    <tab label="[yourlabel]"/>
+    <!-- default options:"generate-ps-style|none" -->
+    <!-- label options:"generate-ps-style|[name of style]" -->
+    <inline default="generate-ps-style">
+  
+    </inline>
+    
+    <!-- default options:"[existing table style]|TableGrid" -->
+    <tables default="Table Normal">
+      
+    </tables>
+    
+    <!-- options:"[existing style name]" -->
+    <heading>
+      <level value="1" wordstyle="heading 1">
+        <prefix select="true"/>
+      </level>
+      <level value="2" wordstyle="heading 2">
+        <prefix select="true"/>
+      </level>
+      <level value="3" wordstyle="heading 3">
+        <prefix select="true"/>
+      </level>
+      <level value="4" wordstyle="heading 4">
+        <prefix select="true"/>
+      </level>
+      <level value="5" wordstyle="heading 5">
+        <prefix select="true"/>
+      </level>
+      <level value="6" wordstyle="heading 6">
+        <prefix select="true"/>
+      </level>
+      <!-- Numbered Headings -->
+      <level value="1" numbered="true" wordstyle="Numbered Heading 1">
+      </level>
+      <level value="2" numbered="true" wordstyle="Numbered Heading 2">
+      </level>
+      <level value="3" numbered="true" wordstyle="Numbered Heading 3">
+      </level>
+      <level value="4" numbered="true" wordstyle="Numbered Heading 4">
+      </level>
+      <level value="5" numbered="true" wordstyle="Numbered Heading 5">
+      </level>
+      <level value="6" numbered="true" wordstyle="Numbered Heading 6">
+      </level>
+    </heading>
+
+    <para>
+      <indent level="0" wordstyle="Body Text">
+<!--         <prefix select="true" output="fieldcode"/> -->
+      </indent>
+      <indent level="1" wordstyle="List Continue">
+        <prefix select="true"/>
+      </indent>
+      <indent level="2" wordstyle="List Continue 2">
+        <prefix select="true"/>
+      </indent>
+      <indent level="3" wordstyle="List Continue 3">
+        <prefix select="true"/>
+      </indent>
+      <indent level="4" wordstyle="List Continue 4">
+        <prefix select="true"/>
+      </indent>
+      <indent level="5" wordstyle="List Continue 5">
+        <prefix select="true"/>
+      </indent>
+      <indent level="6" wordstyle="List Continue 6">
+        <prefix select="true"/>
+      </indent>
+      <indent level="1" numbered="true" wordstyle="List Number">
+      </indent>
+      <indent level="2" numbered="true" wordstyle="List Number 2">
+      </indent>
+      <indent level="3" numbered="true" wordstyle="List Number 3">
+      </indent>
+      <indent level="4" numbered="true" wordstyle="List Number 4">
+      </indent>
+      <indent level="5" numbered="true" wordstyle="List Number 5">
+      </indent>
+      <indent level="6" numbered="true" wordstyle="List Number 6">
+      </indent>
+    </para>
+    <preformat wordstyle="HTML Preformatted"/>
+    <nlist>
+      <default>
+        <level value="1" wordstyle="List Number" />
+        <level value="2" wordstyle="List Number 2" />
+        <level value="3" wordstyle="List Number 3" />
+        <level value="4" wordstyle="List Number 4" />
+        <level value="5" wordstyle="List Number 5" />
+        <level value="6" wordstyle="List Number 6" />
+      </default>
+    </nlist>
+
+    <list>
+      <default>
+        <level value="1" wordstyle="List Bullet" />
+        <level value="2" wordstyle="List Bullet 2" />
+        <level value="3" wordstyle="List Bullet 3" />
+        <level value="4" wordstyle="List Bullet 4" />
+        <level value="5" wordstyle="List Bullet 5" />
+        <level value="6" wordstyle="List Bullet 6" />
+      </default>
+      <role value="[value of role]" wordstyle="[word style]" />
+    </list>
+  </elements>
+</config>

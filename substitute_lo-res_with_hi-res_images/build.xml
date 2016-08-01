@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Default PageSeeder Document Export.
+
+  @author  Philip Rutherford
+  @version 18 August 2010
+-->
+<project name="pageseeder-document" xmlns:ps="antlib:com.pageseeder.external.ant"
+                                   xmlns:psd="antlib:com.pageseeder.ant.docx"
+                                   xmlns:psp="antlib:com.pageseeder.ant.pdf">
+
+  <!--
+     Creates a PDF document from the current document as follows:
+
+     1. Download xref documents
+     2. Generated consolidated XML document
+     3. Generate PDF file
+  -->
+  <target name="create-consolidated-pdf" description="Create PDF Document">
+
+    <ps:config />
+
+    <property name="download" value="${ps.config.default.working}/download" />
+    <property name="process" value="${ps.config.default.working}/process" />
+    <property name="temp" value="${ps.config.default.working}/temp" />
+    <mkdir dir="${download}"/>
+    <mkdir dir="${process}"/>
+    <mkdir dir="${temp}"/>
+
+    <!-- 1. Download all referenced document up to the require depth (include the document info) -->    
+    <echoxml>
+      <progress percent="1" />
+    </echoxml>  
+    
+    <echo>Exporting documents from ${ps.config.default.uri.path}</echo>
+    <ps:export src="${ps.config.default.uri.path}"
+              dest="${download}" xrefdepth="${ps.param.depth}">
+      <xrefs types="replace,embed,transclude"/>
+    </ps:export>
+     
+    <echoxml>
+      <progress percent="50" />
+    </echoxml>
+    <echo>Processing documents</echo>     
+    <ps:process src="${download}" dest="${process}" stripmetadata="false" generatetoc="${ps.param.toc}">
+      <xrefs types="embed,transclude">
+        <include name="${ps.config.default.uri.filename.no.ext}.psml" />
+      </xrefs>
+      <number numberconfig="numbering-config.xml"  />
+      <images embedmetadata="true"/>
+      <posttransform xslt="alternate-images.xsl" />
+    </ps:process>
+    
+    <psp:export-pdf src="${process}/${ps.config.default.uri.filename.no.ext}.psml"
+                   dest="${ps.config.default.working}/${ps.config.default.uri.filename.no.ext}.pdf"
+                working="${temp}">
+      <configs folder="../../../../${ps.config.default.group.template}/psml" priority="2"/>
+      <configs folder="../../../../${ps.config.default.custom.folder}/psml"  priority="1"/>
+    </psp:export-pdf>
+
+    <echo>Copy result to session folder</echo>
+    <copy todir="${ps.config.default.web.root}/session/${ps.config.default.session.folder}${ps.config.default.group.folder.no.prefix}/export"
+        file="${ps.config.default.working}/${ps.config.default.uri.filename.no.ext}.pdf" />
+    <echoxml>
+      <displayUriPath>${ps.config.default.engine.url}/session/${ps.config.default.session.folder}${ps.config.default.group.folder.no.prefix}/export/${ps.config.default.uri.filename.no.ext}.pdf</displayUriPath>
+    </echoxml>
+  </target>
+
+  <!--
+     Creates a DOCX document from the current document as follows:
+
+     1. Download xref documents
+     2. Generated consolidated XML document
+     3. Download related media
+     4. Get DOTX Template customisation
+     5. Generate DOCX file
+  -->   
+  <target name="create-consolidated-docx" description="Create Word Document">
+    
+    <ps:config />
+    
+    <property name="working" value="${ps.config.default.working}" />
+    <property name="download" value="${working}/download" />
+    <property name="process" value="${working}/process" /> 
+    <property name="schematron.psml" value="${working}/psml" />
+    <property name="schematron.config" value="${working}/config" />
+    
+    <mkdir dir="${download}"/>
+    <mkdir dir="${process}"/>
+    <mkdir dir="${schematron.config}"/>
+    <mkdir dir="${schematron.psml}"/>
+    
+    <!-- 1. Download all referenced document up to the require depth (include the document info) -->
+    
+    <echoxml>
+      <progress percent="1" />
+    </echoxml>  
+    
+    <echo>Exporting documents from ${ps.config.default.uri.path}</echo>
+    <ps:export src="${ps.config.default.uri.path}"
+              dest="${download}" xrefdepth="${ps.param.depth}">
+      <xrefs types="replace,embed,transclude"/>
+    </ps:export>
+     
+    <echoxml>
+      <progress percent="50" />
+    </echoxml>
+    <echo>Processing documents</echo>      
+    <ps:process src="${download}" dest="${process}" stripmetadata="false">
+      <xrefs types="embed,transclude">
+        <include name="${ps.config.default.uri.filename.no.ext}.psml" />
+      </xrefs>
+      <images src="uriid" location="${working}/docx/prepacked/word/media" embedmetadata="true">
+        <include name="${ps.config.default.uri.filename.no.ext}.psml" />
+      </images>
+      <posttransform xslt="alternate-images.xsl" />
+    </ps:process>
+    
+    <echo>Running schematron validation on input file</echo>
+    <path id="schematron.classpath"><fileset dir="${basedir}"><include name="*.jar" /></fileset></path>
+    <taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpathref="schematron.classpath"/>
+    <schematron schema="validate-psml.sch" failonerror="true" outputDir="${schematron.psml}" file="${process}/${ps.config.default.uri.filename.no.ext}.psml" queryLanguageBinding="xslt2" format="svrl" />
+
+    <xmlproperty file="${schematron.psml}/result.xml"/>
+        
+    <fail message="Input psml file has errors. Please check the log and correct the failed assertions found!" if="fileset.file.svrl:schematron-output.svrl:failed-assert.svrl:text"/>
+    
+    <condition property="override-template" value="../../../../${ps.config.default.group.template}/document/psml/export/word-export-template.docx">
+      <resourceexists>
+        <file file="../../../../${ps.config.default.group.template}/document/psml/export/word-export-template.docx"/>
+      </resourceexists>
+    </condition>
+    
+    <condition property="override-template" value="../../../../${ps.config.default.custom.folder}/document/psml/export/word-export-template.docx">
+      <and>
+        <not>
+          <isset property="override-template" />
+        </not>
+        <resourceexists>
+          <file file="../../../../${ps.config.default.custom.folder}/document/psml/export/word-export-template.docx"/>
+        </resourceexists>
+      </and>
+    </condition>
+    
+    <condition property="override-template" value="word-export-template.docx">
+      <not>
+        <isset property="override-template" />
+      </not>
+    </condition>
+    <echo>Using template: ${override-template}</echo>
+    
+    <condition property="override-configuration" value="../../../../${ps.config.default.group.template}/document/psml/export/word-export-config.xml">
+      <resourceexists>
+        <file file="../../../../${ps.config.default.group.template}/document/psml/export/word-export-config.xml"/>
+      </resourceexists>
+    </condition>
+    
+    <condition property="override-configuration" value="../../../../${ps.config.default.custom.folder}/document/psml/export/word-export-config.xml">
+      <and>
+        <not>
+          <isset property="override-configuration" />
+        </not>
+        <resourceexists>
+          <file file="../../../../${ps.config.default.custom.folder}/document/psml/export/word-export-config.xml"/>
+        </resourceexists>
+      </and>
+    </condition>
+    
+    <condition property="override-configuration" value="word-export-config.xml">
+      <not>
+        <isset property="override-configuration" />
+      </not>
+    </condition>
+    <echo>Using configuration: ${override-configuration}</echo>
+    
+    <echo>Running schematron validation on configuration file</echo>
+    <path id="schematron.classpath"><fileset dir="${basedir}"><include name="*.jar" /></fileset></path>
+    <taskdef name="schematron" classname="com.schematron.ant.SchematronTask" classpathref="schematron.classpath"/>
+    <!--
+    <schematron schema="validate-export-config-file.sch" failonerror="true" outputDir="${schematron.config}" file="${override-configuration}" queryLanguageBinding="xslt2" format="svrl" />
+
+    <xmlproperty file="${schematron.config}/result.xml"/>
+        
+    <fail message="Export configuration file has errors. Please check the log and correct the failed assertions found!" if="fileset.file.svrl:schematron-output.svrl:failed-assert.svrl:text"/>
+    -->   
+    
+    <psd:export-docx src="${process}/${ps.config.default.uri.filename.no.ext}.psml" dest="${working}/${ps.config.default.uri.filename.no.ext}.docx" working="${working}/docx" config="${override-configuration}" wordTemplate="${override-template}">
+      <param name="manual-core"        value="${ps.param.manual-core}"/> 
+      <param name="manual-creator"     value="${ps.param.manual-creator}"/> 
+      <param name="manual-revision"    value="${ps.param.manual-revision}"/> 
+      <param name="manual-created"     value="${ps.param.manual-created}"/> 
+      <param name="manual-version"     value="${ps.param.manual-version}"/> 
+      <param name="manual-category"    value="${ps.param.manual-category}"/> 
+      <param name="manual-title"       value="${ps.param.manual-title}"/> 
+      <param name="manual-subject"     value="${ps.param.manual-subject}"/> 
+      <param name="manual-description" value="${ps.param.manual-description}"/> 
+    </psd:export-docx>
+    <echo>Copy results to session folder</echo>
+    <copy todir="${ps.config.default.web.root}/session/${ps.config.default.session.folder}${ps.config.default.group.folder.no.prefix}/export" file="${working}/${ps.config.default.uri.filename.no.ext}.docx" />
+    <echoxml>
+      <displayUriPath>${ps.config.default.engine.url}/session/${ps.config.default.session.folder}${ps.config.default.group.folder.no.prefix}/export/${ps.config.default.uri.filename.no.ext}.docx</displayUriPath>
+    </echoxml>
+  </target>
+
+
+</project>
