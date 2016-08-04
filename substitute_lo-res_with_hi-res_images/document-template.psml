@@ -1,0 +1,97 @@
+<!--
+  PSML document template for png
+
+  The document template is in PSML format but also includes basic templating elements
+  to allow a fill-in-the-blanks instantiation of a new document.
+
+  When creating new documents, PageSeeder will send the following parameters:
+   - ps.title           = The title from the user interface or as specified by the <creation> options.
+   - ps.filename        = The filename of the document
+   - ps.description     = The the description entered in the user interface
+   - ps.author          = The first name and surname of the user creating the document
+   - ps.docid           = The document ID from the user interface or as specified by the <creation> options.
+   - ps.group           = The current group for the document
+   - ps.path            = The path of the document
+   - ps.currentdate     = The current date in ISO8601 format
+   - ps.currentdatetime = The current datetime in ISO8601 format including timezone information
+   - ps.currenttime     = The current time in ISO8601 format including timezone information
+
+  Parameters can be defined using
+    <t:param name="[name]" title="[title for UI]" default="[default value if unspecified or empty]"
+      type="[text|integer|date|datetime|xml]" />
+
+  Parameter values can be inserted using:
+    <t:value name="[name]"/> inside text nodes
+    {$[name]} inside attribute nodes
+
+  Fragments can be defined at the top using:
+    <t:fragment type="[fragment type]" title="[title for UI]">
+
+  Fragments can be inserted inside <section> using:
+    <t:fragment-ref id="[fragment id]" type="[fragment type]">
+-->
+<document type="png" level="metadata" xmlns:t="http://pageseeder.com/psml/template">
+
+  <!-- Fragment types -->
+  <!--
+  <t:fragment type="mytype" title="My Type">
+    <fragment>
+      <para>My type's content.</para>
+    </fragment>
+  </t:fragment>
+  -->
+
+  <!-- Metadata properties -->
+ 
+  <metadata>
+    <properties>
+      <property name="caption" title="Caption"   value="" />
+      <property name="action"  title="Action"    value="" />
+      <property name="hi-res"  title="Hi-res"    datatype="xref" />
+    </properties>
+  </metadata>
+ 
+
+  <!-- Title -->
+  <!--
+  <section id="title">
+    <fragment id="1">
+      <heading level="1"><t:value name="ps.title"/></heading>
+    </fragment>
+  </section>
+  -->
+  <!-- Sample section including default content -->
+  <!--
+  <section id="content">
+    <fragment id="2">
+      <para><t:value name="ps.description"/></para>
+    </fragment>
+  </section>
+  -->
+
+  <!-- Sample section incuding properties fragment -->
+  <!--
+  <section id="details">
+    <properties-fragment id="3">
+      <property name="title"   title="Title"     value="{$ps.title}" />
+      <property name="pubdate" title="Published" value="{$ps.currentdate}" datatype="date" />
+    </properties-fragment>
+  </section>
+  -->
+
+  <!-- Sample section including xref fragment -->
+  <!--
+  <section id="xrefs">
+    <xref-fragment id="4"/>
+  </section>
+  -->
+
+  <!-- Sample section including media fragment with mathml -->
+  <!--
+  <section id="media">
+    <media-fragment id="5" mediatype="application/mathml+xml" />
+  </section>
+  -->
+
+</document>
+

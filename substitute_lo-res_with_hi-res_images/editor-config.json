@@ -1,0 +1,13 @@
+{
+ 
+  "PSMLMetadataConfig": {
+    "fields": {
+      "action" : {
+        "type": "checkbox",
+        "label": "Action",
+        "values": ["None", "Zoom", "Fullscreen"]
+      }
+    }
+
+}
+}
