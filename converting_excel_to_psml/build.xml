@@ -17,12 +17,7 @@
     <!-- Set and create working directories -->
     <property name="download" value="${ps.config.default.working}/download" />
     <property name="output"   value="${ps.config.default.working}/output" />
-    <property name="temp"   value="${ps.config.default.working}/temp" />
-    <mkdir dir="${download}"/>
-    <mkdir dir="${output}"/>
-    <mkdir dir="${temp}"/>
-    
-    <!-- 1. Get uploaded Excel from the loading zone -->
+    <property name="temp"   value="${ps.config.default.working}/temp" />loaded Excel from the loading zone -->
     <echo>Downloading document from ${ps.config.default.upload.path}</echo>
     <echoxml><progress percent="10" /></echoxml>
     <ps:ps-upload-get destination="${download}" path="${ps.config.default.upload.path}" group="${ps.config.default.group.name}"
@@ -51,5 +46,33 @@
     <delete dir="${download}" includes="*,**" includeemptydirs="true" />
     <delete dir="${output}" includes="*,**" includeemptydirs="true" />
     <delete dir="${temp}" includes="*,**" includeemptydirs="true" />
+    <mkdir dir="${download}"/>
+    <mkdir dir="${output}"/>
+    <mkdir dir="${temp}"/>
+    
+    <!-- 1. Get uploaded Excel from the loading zone -->
+    <echo>Downloading document from ${ps.config.default.upload.path}</echo>
+    <echoxml><progress percent="10" /></echoxml>
+    <ps:ps-upload-get destination="${download}" path="${ps.config.default.upload.path}" group="${ps.config.default.group.name}"
+      jsessionid="${ps.config.default.jsessionid}" host="${ps.config.default.host}" port="${ps.config.default.port}"
+      servletPrefix="${ps.config.default.servlet.prefix}" sitePrefix="${ps.config.default.site.prefix}">
+    </ps:ps-upload-get>
+    
+    <echo>Creating Converted documents (Excel to PSML)</echo>
+    <echoxml><progress percent="15" /></echoxml>
+    <!-- we need to create specific filenames so use splitlevel=worksheet and produce our own assessments documents -->
+    <psx:import-spreadsheet src="${download}/${ps.config.default.upload.filename}" dest="${output}" working="${temp}"
+      templates="films-template.xsl"/>
+        <!-- 3. Trigger the Upload process of the PSML files -->
+    <echo>Uploading PSML created</echo>
+    <echoxml><progress percent="80" /></echoxml>
+    <ps:ps-upload-put output="${output}/uploaded.xml" group="${ps.config.default.group.name}"
+                      jsessionid="${ps.config.default.jsessionid}" 
+                      host="${ps.config.default.host}"
+                      port="${ps.config.default.port}"
+                      servletPrefix="${ps.config.default.servlet.prefix}" sitePrefix="${ps.config.default.site.prefix}">
+      <fileset dir="${output}" includes="*.psml" />
+    </ps:ps-upload-put>
+
   </target>
 </project>
