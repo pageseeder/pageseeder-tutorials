@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820897" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820897" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-20.psml" decodedpath="/ps/movies/data/website/content/films/film-20.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:39+10:00" modified="2016-06-01T14:16:11+10:00" title="The Truman Show"><displaytitle>The Truman Show</displaytitle></uri></documentinfo><fragmentinfo><locator id="777103" fragment="2" editid="1781067" modified="2016-06-01T12:39:39+10:00"/><locator id="777096" fragment="3" editid="1781066" modified="2016-06-01T12:39:39+10:00"/><locator id="777094" fragment="5" editid="1781065" modified="2016-06-01T12:39:39+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">The Truman Show</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1998"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Comedy</value>
+            <value>Drama</value>
+            <value>Science Fiction</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1781054" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820809" href="../bios/bio-171.psml" urititle="Peter Weir" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Peter Weir</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1781055" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820829" href="../bios/bio-172.psml" urititle="Edward S. Feldman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Edward S. Feldman</xref>
+            <xref id="1781056" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820950" href="../bios/bio-173.psml" urititle="Scott Rudin" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Scott Rudin</xref>
+            <xref id="1781057" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820975" href="../bios/bio-174.psml" urititle="Andrew Niccol" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Andrew Niccol</xref>
+            <xref id="1781058" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820686" href="../bios/bio-175.psml" urititle="Adam Schroeder" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Adam Schroeder</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1781059" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820975" href="../bios/bio-174.psml" urititle="Andrew Niccol" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Andrew Niccol</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1781060" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820814" href="../bios/bio-176.psml" urititle="Jim Carrey" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jim Carrey</xref>
+            <xref id="1781061" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820743" href="../bios/bio-177.psml" urititle="Laura Linney" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Laura Linney</xref>
+            <xref id="1781062" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820852" href="../bios/bio-178.psml" urititle="Noah Emmerich" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Noah Emmerich</xref>
+            <xref id="1781063" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820725" href="../bios/bio-179.psml" urititle="Ed Harris" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ed Harris</xref>
+            <xref id="1781064" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820929" href="../bios/bio-180.psml" urititle="Natascha McElhone" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Natascha McElhone</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>The Truman Show is a 1998 American science fiction comedy-drama film directed by Peter Weir and written by <xref id="1781048" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820975" href="../bios/bio-174.psml" urititle="Andrew Niccol" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Andrew Niccol</xref>. The film stars <xref id="1781049" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820814" href="../bios/bio-176.psml" urititle="Jim Carrey" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jim Carrey</xref> as Truman Burbank, <xref id="1781050" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820743" href="../bios/bio-177.psml" urititle="Laura Linney" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Laura Linney</xref>, <xref id="1781051" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820852" href="../bios/bio-178.psml" urititle="Noah Emmerich" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Noah Emmerich</xref>, <xref id="1781052" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820725" href="../bios/bio-179.psml" urititle="Ed Harris" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ed Harris</xref> and <xref id="1781053" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820929" href="../bios/bio-180.psml" urititle="Natascha McElhone" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Natascha McElhone</xref>. The film chronicles the life of a man who is initially unaware that he is living in a constructed reality television show, broadcast around the clock to billions of people around the globe. Truman becomes suspicious of his perceived reality and embarks on a quest to discover the truth about his life.</para>
+         <para>The genesis of The Truman Show was a spec script by Niccol, inspired by an episode of The Twilight Zone called "Special Service".[1] The original draft was more in tone of a science fiction thriller, with the story set in New York City. Scott Rudin purchased the script, and immediately set the project up at Paramount Pictures. Brian De Palma was in contention to direct before Weir took over and managed to make the film for $60 million against the estimated $80 million budget. Niccol rewrote the script simultaneously as the filmmakers were waiting for Carrey's schedule to open up for filming. The majority of filming took place at Seaside, Florida, a master-planned community located in the Florida Panhandle.</para>
+         <para>The film was a financial and critical success, and earned numerous nominations at the 71st Academy Awards, 56th Golden Globe Awards, 52nd British Academy Film Awards and The Saturn Awards. The Truman Show has been analyzed as a thesis on Christianity, metaphilosophy, simulated reality, existentialism and reality television.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/thetrumanshow.jpg" uriid="820811"/>
+      </fragment>
+   </section>
+</document>

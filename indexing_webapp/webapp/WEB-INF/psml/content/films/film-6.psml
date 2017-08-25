@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820951" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820951" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-6.psml" decodedpath="/ps/movies/data/website/content/films/film-6.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:40+10:00" modified="2016-06-01T14:16:11+10:00" title="A Fish Called Wanda"><displaytitle>A Fish Called Wanda</displaytitle></uri><reversexrefs><reversexref uriid="820898" href="../bios/bio-13.psml" frag="3" urititle="Michael Edward Palin" id="1781070" title="" type="none" forwardtype="none" forwarddisplay="document" forwardfrag="default"/></reversexrefs></documentinfo><fragmentinfo><locator id="777146" fragment="5" editid="1781138" modified="2016-06-01T12:39:40+10:00"/><locator id="777148" fragment="3" editid="1781139" modified="2016-06-01T12:39:40+10:00"/><locator id="777152" fragment="2" editid="1781140" modified="2016-06-01T12:39:40+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">A Fish Called Wanda</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1988"/>
+         <property name="classification" title="Classification" value="M"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Comedy</value>
+         </property>
+         <property name="country" title="Country" value="UK"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1781130" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820737" href="../bios/bio-36.psml" urititle="Charles Crichton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Charles Crichton</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1781131" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820843" href="../bios/bio-37.psml" urititle="Michael Shamberg" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Michael Shamberg</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1781132" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820775" href="../bios/bio-38.psml" urititle="John Cleese" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Cleese</xref>
+            <xref id="1781133" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820737" href="../bios/bio-36.psml" urititle="Charles Crichton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Charles Crichton</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1781134" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820775" href="../bios/bio-38.psml" urititle="John Cleese" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Cleese</xref>
+            <xref id="1781135" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820704" href="../bios/bio-39.psml" urititle="Jamie Lee Curtis" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jamie Lee Curtis</xref>
+            <xref id="1781136" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820696" href="../bios/bio-40.psml" urititle="Kevin Kline" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Kevin Kline</xref>
+            <xref id="1781137" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820898" href="../bios/bio-13.psml" urititle="Michael Edward Palin" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Michael Edward Palin</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>A Fish Called Wanda is a 1988 heist-comedy film written by <xref id="1781124" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820775" href="../bios/bio-38.psml" urititle="John Cleese" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Cleese</xref> and <xref id="1781125" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820737" href="../bios/bio-36.psml" urititle="Charles Crichton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Charles Crichton</xref>. It was directed by Crichton (it was his final film) and stars <xref id="1781126" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820775" href="../bios/bio-38.psml" urititle="John Cleese" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Cleese</xref>, <xref id="1781127" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820704" href="../bios/bio-39.psml" urititle="Jamie Lee Curtis" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jamie Lee Curtis</xref>, <xref id="1781128" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820696" href="../bios/bio-40.psml" urititle="Kevin Kline" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Kevin Kline</xref>, and <xref id="1781129" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820898" href="../bios/bio-13.psml" urititle="Michael Edward Palin" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Michael Edward Palin</xref>. Kline won the Academy Award for Best Supporting Actor for his performance as Otto. Cleese and Palin won BAFTA Awards for Best Lead and Best Supporting for their acting.</para>
+         <para>The plot involves members of the crew of a successful diamond heist as they manipulate and double-cross one-another in an effort to find the diamonds, which have been hidden by the gang's leader just before he was arrested, having been set-up by one of his subordinates. His barrister, played by Cleese, becomes a central figure in the crew's schemes as femme fatale Wanda (Curtis) uses him to locate the loot.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/afishcalledwanda.jpg" uriid="820702"/>
+      </fragment>
+   </section>
+</document>

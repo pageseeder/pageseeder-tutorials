@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820777" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820777" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-18.psml" decodedpath="/ps/movies/data/website/content/films/film-18.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:37+10:00" modified="2016-06-01T14:16:11+10:00" title="Raging Bull"><displaytitle>Raging Bull</displaytitle></uri></documentinfo><fragmentinfo><locator id="776982" fragment="3" editid="1780894" modified="2016-06-01T12:39:37+10:00"/><locator id="776990" fragment="2" editid="1780895" modified="2016-06-01T12:39:37+10:00"/><locator id="776980" fragment="5" editid="1780893" modified="2016-06-01T12:39:37+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Raging Bull</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1980"/>
+         <property name="classification" title="Classification" value="R18+"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Biography</value>
+            <value>Drama</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780882" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820713" href="../bios/bio-151.psml" urititle="Martin Scorsese" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Martin Scorsese</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780883" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820925" href="../bios/bio-152.psml" urititle="Irwin Winkler" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Irwin Winkler</xref>
+            <xref id="1780884" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820759" href="../bios/bio-153.psml" urititle="Robert Chartoff" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robert Chartoff</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780885" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820785" href="../bios/bio-154.psml" urititle="Paul Schrader" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Paul Schrader</xref>
+            <xref id="1780886" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820754" href="../bios/bio-155.psml" urititle="Mardik Martin" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Mardik Martin</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780887" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820910" href="../bios/bio-11.psml" urititle="Robert De Niro" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robert De Niro</xref>
+            <xref id="1780888" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820974" href="../bios/bio-156.psml" urititle="Joe Pesci" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Joe Pesci</xref>
+            <xref id="1780889" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820848" href="../bios/bio-157.psml" urititle="Cathy Moriarty" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Cathy Moriarty</xref>
+            <xref id="1780890" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820923" href="../bios/bio-158.psml" urititle="Nicholas Colasanto" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Nicholas Colasanto</xref>
+            <xref id="1780891" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820959" href="../bios/bio-159.psml" urititle="Theresa Saldana" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Theresa Saldana</xref>
+            <xref id="1780892" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820970" href="../bios/bio-160.psml" urititle="Frank Vincent" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Frank Vincent</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Raging Bull is a 1980 American biographical black-and-white sports drama film directed by Martin Scorsese, produced by Robert Chartoff and Irwin Winkler and adapted by <xref id="1780874" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820785" href="../bios/bio-154.psml" urititle="Paul Schrader" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Paul Schrader</xref> and <xref id="1780875" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820754" href="../bios/bio-155.psml" urititle="Mardik Martin" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Mardik Martin</xref> from Jake LaMotta's memoir Raging Bull: My Story. It stars <xref id="1780876" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820910" href="../bios/bio-11.psml" urititle="Robert De Niro" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robert De Niro</xref> as Jake LaMotta, an Italian American middleweight boxer whose self-destructive and obsessive rage, sexual jealousy, and animalistic appetite destroyed his relationship with his wife and family. Also featured in the film are <xref id="1780877" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820974" href="../bios/bio-156.psml" urititle="Joe Pesci" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Joe Pesci</xref> as Joey, La Motta's well-intentioned brother and manager who tries to help Jake battle his inner demons, and <xref id="1780878" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820848" href="../bios/bio-157.psml" urititle="Cathy Moriarty" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Cathy Moriarty</xref> as his wife. The film features supporting roles from <xref id="1780879" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820923" href="../bios/bio-158.psml" urititle="Nicholas Colasanto" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Nicholas Colasanto</xref>, <xref id="1780880" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820959" href="../bios/bio-159.psml" urititle="Theresa Saldana" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Theresa Saldana</xref> and <xref id="1780881" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820970" href="../bios/bio-160.psml" urititle="Frank Vincent" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Frank Vincent</xref>.</para>
+         <para>Scorsese was initially reluctant to develop the project, though he eventually came to relate to La Motta's story. Schrader re-wrote Martin's first screenplay, and Scorsese and De Niro together made uncredited contributions thereafter. Pesci was an unknown actor prior to the film, as was Moriarty, who was suggested for her role by Pesci. During principal photography, each of the boxing scenes was choreographed for a specific visual style and De Niro gained approximately 60 pounds (27 kg) to portray La Motta in his later post-boxing years. Scorsese was exacting in the process of editing and mixing the film, expecting it to be his last major feature[citation needed].</para>
+         <para>After receiving mixed initial reviews (and criticism due to its violent content), it went on to garner a high critical reputation and is now regarded among the greatest American films ever made, including by Roger Ebert of the Chicago Sun-Times, Gene Siskel of the Chicago Tribune, British film historian Leslie Halliwell, the American Film Institute, Time, The New York Times, Variety, Entertainment Weekly, Empire, Total Film, Film 4, and BFI's Sight and Sound. It was listed in the National Film Registry in 1990, its first year of eligibility. Raging Bull is voted by many critics including Roger Ebert and Gene Siskel as the best film of the 1980s. The film is now regarded by many to be Scorsese's magnum opus.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/ragingbull.jpg" uriid="820806"/>
+      </fragment>
+   </section>
+</document>

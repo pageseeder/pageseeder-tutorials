@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820973" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820973" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-4.psml" decodedpath="/ps/movies/data/website/content/films/film-4.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:40+10:00" modified="2016-06-01T14:16:11+10:00" title="Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb"><displaytitle>Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb</displaytitle></uri><reversexrefs><reversexref uriid="820839" href="../bios/bio-24.psml" frag="3" urititle="Louis Burton Lindley, Jr." id="1780999" title="" type="none" forwardtype="none" forwarddisplay="document" forwardfrag="default"/><reversexref uriid="820846" href="../bios/bio-22.psml" frag="3" urititle="Sterling Walter Hayden" id="1781003" title="" type="none" forwardtype="none" forwarddisplay="document" forwardfrag="default"/><reversexref uriid="820933" href="../bios/bio-21.psml" frag="3" urititle="George Campbell Scott" id="1781120" title="" type="none" forwardtype="none" forwarddisplay="document" forwardfrag="default"/><reversexref uriid="820954" href="../bios/bio-23.psml" frag="3" urititle="Keenan Wynn" id="1781142" title="" type="none" forwardtype="none" forwarddisplay="document" forwardfrag="default"/></reversexrefs></documentinfo><fragmentinfo><locator id="777178" fragment="3" editid="1781191" modified="2016-06-01T12:39:40+10:00"/><locator id="777183" fragment="2" editid="1781192" modified="2016-06-01T12:39:40+10:00"/><locator id="777176" fragment="5" editid="1781190" modified="2016-06-01T12:39:40+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1964"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Black Comedy</value>
+            <value>Political Satire</value>
+            <value>Science Fiction</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1781182" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820769" href="../bios/bio-19.psml" urititle="Stanley Kubrick" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Stanley Kubrick</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1781183" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820769" href="../bios/bio-19.psml" urititle="Stanley Kubrick" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Stanley Kubrick</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1781184" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820769" href="../bios/bio-19.psml" urititle="Stanley Kubrick" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Stanley Kubrick</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1781185" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820927" href="../bios/bio-20.psml" urititle="Peter Sellers" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Peter Sellers</xref>
+            <xref id="1781186" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820933" href="../bios/bio-21.psml" urititle="George Campbell Scott" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Campbell Scott</xref>
+            <xref id="1781187" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820846" href="../bios/bio-22.psml" urititle="Sterling Walter Hayden" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sterling Walter Hayden</xref>
+            <xref id="1781188" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820954" href="../bios/bio-23.psml" urititle="Keenan Wynn" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Keenan Wynn</xref>
+            <xref id="1781189" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820839" href="../bios/bio-24.psml" urititle="Louis Burton Lindley, Jr." mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Louis Burton Lindley, Jr.</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb, more commonly known as Dr. Strangelove, is a 1964 political satire black comedy film that satirizes the Cold War fears of a nuclear conflict between the USSR and the US. The film was directed, produced, and co-written by <xref id="1781176" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820769" href="../bios/bio-19.psml" urititle="Stanley Kubrick" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Stanley Kubrick</xref>, stars <xref id="1781177" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820927" href="../bios/bio-20.psml" urititle="Peter Sellers" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Peter Sellers</xref> and <xref id="1781178" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820933" href="../bios/bio-21.psml" urititle="George Campbell Scott" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Campbell Scott</xref>, and features <xref id="1781179" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820846" href="../bios/bio-22.psml" urititle="Sterling Walter Hayden" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sterling Walter Hayden</xref>, <xref id="1781180" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820954" href="../bios/bio-23.psml" urititle="Keenan Wynn" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Keenan Wynn</xref>, and <xref id="1781181" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820839" href="../bios/bio-24.psml" urititle="Louis Burton Lindley, Jr." mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Louis Burton Lindley, Jr.</xref>. Production took place in the United Kingdom. The film is loosely based on Peter George's thriller novel Red Alert.</para>
+         <para>The story concerns an unhinged United States Air Force general who orders a first strike nuclear attack on the Soviet Union. It follows the President of the United States, his advisers, the Joint Chiefs of Staff, and a Royal Air Force (RAF) officer as they try to recall the bombers to prevent a nuclear apocalypse. It separately follows the crew of one B-52 bomber as they try to deliver their payload.</para>
+         <para>In 1989, the United States Library of Congress included it in the first group of films selected for preservation in the National Film Registry. It was listed as number three on AFI's 100 Years...100 Laughs list.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/drstrangelove.jpg" uriid="820690"/>
+      </fragment>
+   </section>
+</document>

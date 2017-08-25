@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820719" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820719" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-17.psml" decodedpath="/ps/movies/data/website/content/films/film-17.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:36+10:00" modified="2016-06-01T14:16:11+10:00" title="The Quick and the Dead"><displaytitle>The Quick and the Dead</displaytitle></uri></documentinfo><fragmentinfo><locator id="776904" fragment="2" editid="1780760" modified="2016-06-01T12:39:36+10:00"/><locator id="776896" fragment="3" editid="1780759" modified="2016-06-01T12:39:36+10:00"/><locator id="776894" fragment="5" editid="1780758" modified="2016-06-01T12:39:36+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">The Quick and the Dead</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1995"/>
+         <property name="classification" title="Classification" value="M"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Action</value>
+            <value>Drama</value>
+            <value>Thriller</value>
+            <value>Western</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780747" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820942" href="../bios/bio-140.psml" urititle="Sam Raimi" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sam Raimi</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780748" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820932" href="../bios/bio-141.psml" urititle="Joshua Donen" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Joshua Donen</xref>
+            <xref id="1780749" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820868" href="../bios/bio-142.psml" urititle="Patrick Markey" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Patrick Markey</xref>
+            <xref id="1780750" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820716" href="../bios/bio-143.psml" urititle="Allen Shapiro" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Allen Shapiro</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780751" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820939" href="../bios/bio-148.psml" urititle="Simon Moore" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Simon Moore</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780752" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820706" href="../bios/bio-144.psml" urititle="Sharon Stone" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sharon Stone</xref>
+            <xref id="1780753" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820730" href="../bios/bio-145.psml" urititle="Gene Hackman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Gene Hackman</xref>
+            <xref id="1780754" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820905" href="../bios/bio-146.psml" urititle="Russell Crowe" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Russell Crowe</xref>
+            <xref id="1780755" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820766" href="../bios/bio-147.psml" urititle="Leonardo DiCaprio" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Leonardo DiCaprio</xref>
+            <xref id="1780756" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820836" href="../bios/bio-149.psml" urititle="Woody Strode" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Woody Strode</xref>
+            <xref id="1780757" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820780" href="../bios/bio-150.psml" urititle="Roberts Blossom" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Roberts Blossom</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>The Quick and the Dead is a 1995 American western film directed by Sam Raimi, and starring <xref id="1780740" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820706" href="../bios/bio-144.psml" urititle="Sharon Stone" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sharon Stone</xref>, <xref id="1780741" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820730" href="../bios/bio-145.psml" urititle="Gene Hackman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Gene Hackman</xref>, <xref id="1780742" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820905" href="../bios/bio-146.psml" urititle="Russell Crowe" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Russell Crowe</xref> and <xref id="1780743" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820766" href="../bios/bio-147.psml" urititle="Leonardo DiCaprio" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Leonardo DiCaprio</xref>. The story focuses on "The Lady" (Stone), a gunfighter who rides into the frontier town of Redemption, controlled by John Herod (Hackman). The Lady joins a deadly dueling competition in an attempt to exact revenge for her father's death.</para>
+         <para>
+            <xref id="1780744" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820939" href="../bios/bio-148.psml" urititle="Simon Moore" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Simon Moore</xref>'s script was purchased by Sony Pictures Entertainment in May 1993, and actress Sharon Stone signed on as both star and co-producer. Development was fast tracked after director Sam Raimi's hiring, and principal photography began in Old Tucson Studios in Arizona on November 21, 1993. The film was distributed by TriStar Pictures and Columbia Pictures, and was released in the US on February 10, 1995 to a dismal box office performance, receiving lukewarm reviews from critics.</para>
+         <para>This was Russell Crowe's first American film debut. This was <xref id="1780745" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820836" href="../bios/bio-149.psml" urititle="Woody Strode" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Woody Strode</xref>'s final performance (the film is dedicated to him), as well as the last theatrical release of <xref id="1780746" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820780" href="../bios/bio-150.psml" urititle="Roberts Blossom" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Roberts Blossom</xref> who died in 2011. The phrase "the quick and the dead" is from the Book of Common Prayer and its version of the Apostles' Creed, describing the final judgement. The plot of this film bears no resemblance to that of the 1987 film of the same name, which was based on a western novel by Louis L'Amour.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/thequickandthedead.jpg" uriid="820850"/>
+      </fragment>
+   </section>
+</document>

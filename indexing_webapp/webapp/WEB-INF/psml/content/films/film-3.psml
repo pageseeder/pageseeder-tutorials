@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820779" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820779" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-3.psml" decodedpath="/ps/movies/data/website/content/films/film-3.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:37+10:00" modified="2016-06-01T14:16:11+10:00" title="Citizen Kane"><displaytitle>Citizen Kane</displaytitle></uri><reversexrefs><reversexref uriid="820821" href="../bios/bio-17.psml" frag="3" urititle="George Orson Welles" id="1780976" title="" type="none" forwardtype="none" forwarddisplay="document" forwardfrag="default"/></reversexrefs></documentinfo><fragmentinfo><locator id="776998" fragment="2" editid="1780907" modified="2016-06-01T12:39:37+10:00"/><locator id="776994" fragment="5" editid="1780905" modified="2016-06-01T12:39:37+10:00"/><locator id="776996" fragment="3" editid="1780906" modified="2016-06-01T12:39:37+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Citizen Kane New</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1941"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Drama</value>
+            <value>Film Noir</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780900" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820821" href="../bios/bio-17.psml" urititle="George Orson Welles" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Orson Welles</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780901" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820821" href="../bios/bio-17.psml" urititle="George Orson Welles" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Orson Welles</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780902" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820753" href="../bios/bio-18.psml" urititle="Herman J. Mankiewicz" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Herman J. Mankiewicz</xref>
+            <xref id="1780903" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820821" href="../bios/bio-17.psml" urititle="George Orson Welles" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Orson Welles</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780904" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820821" href="../bios/bio-17.psml" urititle="George Orson Welles" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Orson Welles</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Citizen Kane is a 1941 American drama film by Orson Welles, its producer, co-author, director and star. The picture was Welles's first feature film. Nominated for Academy Awards in nine categories, it won an Academy Award for Best Writing (Original Screenplay) by <xref id="1780897" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820753" href="../bios/bio-18.psml" urititle="Herman J. Mankiewicz" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Herman J. Mankiewicz</xref> and <xref id="1780898" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820821" href="../bios/bio-17.psml" urititle="George Orson Welles" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Orson Welles</xref>. Considered by many critics, filmmakers, and fans to be the greatest film ever made, Citizen Kane was voted the greatest film of all time in five consecutive Sight and Sound polls of critics, until it was displaced by Vertigo in the 2012 poll. It topped the American Film Institute's 100 Years ... 100 Movies list in 1998, as well as AFI's 2007 update. Citizen Kane is particularly praised for its cinematography, music, and narrative structure, which were innovative for its time.</para>
+         <para>The story is a film that examines the life and legacy of Charles Foster Kane, played by <xref id="1780899" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820821" href="../bios/bio-17.psml" urititle="George Orson Welles" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Orson Welles</xref>, a character based in part upon the American newspaper magnate William Randolph Hearst, Chicago tycoons Samuel Insull and Harold McCormick, and aspects of Welles's own life. Upon its release, Hearst prohibited mention of the film in any of his newspapers. Kane's career in the publishing world is born of idealistic social service, but gradually evolves into a ruthless pursuit of power. Narrated principally through flashbacks, the story is told through the research of a newsreel reporter seeking to solve the mystery of the newspaper magnate's dying word: "Rosebud".</para>
+         <para>After the Broadway successes of Welles's Mercury Theatre and the controversial 1938 radio broadcast "The War of the Worlds" on The Mercury Theatre on the Air, Welles was courted by Hollywood. He signed a contract with RKO Pictures in 1939. Unusual for an untried director, he was given the freedom to develop his own story, to use his own cast and crew, and to have final cut privilege. Following two abortive attempts to get a project off the ground, he wrote the screenplay for Citizen Kane, collaborating on the effort with Herman Mankiewicz. Principal photography took place in 1940 and the film received its American release in 1941.</para>
+         <para>While a critical success, Citizen Kane failed to recoup its costs at the box office. The film faded from view after its release but was subsequently returned to the public's attention when it was praised by such French critics as Andre Bazin and given an American revival in 1956. The film was released on Blu-ray Disc on September 13, 2011, for a special 70th anniversary edition.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/citizenkane.jpg" uriid="820938"/>
+      </fragment>
+   </section>
+</document>

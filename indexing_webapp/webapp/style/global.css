@@ -1,0 +1,399 @@
+/**
+ * Default Styles for the Berlioz Application.
+ */
+/* Background Color of the header */
+/* Background Color of the Navigation */
+/**
+ * Contains all bases styles for the admin interfaces.
+ * (reset/normalize, typography rules, etc...)
+ */
+/* Font stack */
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  background: #e8e8e8;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", "Arial", sans-serif; }
+
+h1, h2, h3 {
+  font-weight: 300; }
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #0099dd; }
+
+a:visited {
+  color: #207CBC; }
+
+a:hover {
+  text-decoration: underline; }
+
+/* multiple sections */
+section + section {
+  clear: both;
+  border-top: 5px solid #f7f7f7;
+  margin-top: 20px; }
+
+select {
+  font-size: 0.9rem; }
+
+/**
+ * Contains all layouts parts of the admin interfaces.
+ * (header, navigation, footer, etc...)
+ */
+/* ------------------------------------------------------------------------ *
+ * Header                                                                   *
+ * ------------------------------------------------------------------------ */
+header.header {
+  background: #1DC6F5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1DC6F5 0%, #1DC6F5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1DC6F5 0%, #1DC6F5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1DC6F5 0%, #1DC6F5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.header-inner:before {
+  content: '\f008';
+  font-family: "FontAwesome";
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 3.5rem;
+  float: left;
+  margin-left: 30px;
+  position: absolute; }
+.header-inner h1 {
+  margin: 0;
+  margin-left: 80px;
+  padding-top: 10px;
+  line-height: 40px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 100, 0.8);
+  font-weight: 300;
+  font-size: 2rem;
+  font-family: "Open Sans", "Arial", sans-serif; }
+  .header-inner h1 sup {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 4px rgba(0, 0, 100, 0.8);
+    font-weight: 300; }
+.header-inner h2 {
+  margin: 0;
+  margin-left: 80px;
+  padding-bottom: 10px;
+  line-height: 20px;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 100, 0.8);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-family: "Open Sans", "Arial", sans-serif; }
+  .header-inner h2 a {
+    color: #0094D7;
+    text-decoration: none; }
+    .header-inner h2 a var {
+      color: white; }
+    .header-inner h2 a:hover {
+      text-decoration: none;
+      border-bottom: 1px dotted; }
+.header-inner h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  float: right;
+  text-shadow: 0 0 4px rgba(0, 0, 100, 0.8);
+  position: relative;
+  top: -18px;
+  font-size: 13px; }
+
+/* ------------------------------------------------------------------------ *
+ * Navigation                                                               *
+ * ------------------------------------------------------------------------ */
+.nav-wrapper {
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.2);
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+  background: #00C2F7; }
+
+.primary-nav {
+  background: #00C2F7;
+  background: -moz-linear-gradient(top, #00C2F7 0%, #00C2F7 100%);
+  background: -webkit-linear-gradient(top, #00C2F7 0%, #00C2F7 100%);
+  background: linear-gradient(top, #00C2F7 0%, #00C2F7 100%); }
+  .primary-nav ul {
+    list-style-type: none;
+    padding: 0 9px;
+    margin: 0;
+    height: 40px; }
+  .primary-nav li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    font-weight: 600; }
+  .primary-nav li a {
+    display: block;
+    height: 40px;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(0, 0, 100, 0.8);
+    transition: all .2s ease-in-out; }
+  .primary-nav li a:hover {
+    background: rgba(0, 0, 0, 0.1); }
+  .primary-nav li.active a {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2); }
+
+/* ------------------------------------------------------------------------ *
+ * Main                                                                     *
+ * ------------------------------------------------------------------------ */
+.article-wrapper {
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.2);
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: none; }
+  .article-wrapper article {
+    padding: 20px;
+    background: white; }
+
+.hidden {
+  display: none; }
+
+/* ------------------------------------------------------------------------ *
+ * Footer                                                                   *
+ * ------------------------------------------------------------------------ */
+footer.footer p {
+  color: #999;
+  line-height: 2rem;
+  font-size: 80%; }
+
+/**
+ * Contains all styles for components specific to the admin interfaces.
+ * (buttons, drop-downs, custom tables, etc...)
+ */
+/* ------------------------------------------------------------------------ *
+ * Tables                                                                   *
+ * ------------------------------------------------------------------------ */
+table tbody, table tfoot, table thead {
+  border: 0; }
+
+/*table*/
+.basic {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 95%; }
+  .basic thead tr {
+    border: 1px solid #d7d7d7;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: linear-gradient(top, #ffffff 0%, #e5e5e5 100%); }
+  .basic tfoot tr {
+    border: 1px solid #d7d7d7;
+    background: #eee;
+    background: -moz-linear-gradient(top, #ddd 0%, #eee 50%);
+    background: -webkit-linear-gradient(top, #ddd 0%, #eee 50%);
+    background: linear-gradient(top, #ddd 0%, #eee 50%); }
+  .basic tbody tr {
+    border: 1px solid #d7d7d7; }
+  .basic td, .basic th {
+    padding: 0.25rem 0.3125rem 0.3125rem; }
+  .basic tfoot td {
+    font-weight: 600; }
+
+/*table*/
+.valuepairs {
+  width: 80%;
+  border-collapse: collapse; }
+  .valuepairs thead tr {
+    border: 1px solid #d7d7d7;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: linear-gradient(top, #ffffff 0%, #e5e5e5 100%); }
+  .valuepairs tbody tr {
+    border: 1px solid #d7d7d7; }
+  .valuepairs tbody tr:nth-child(odd) td {
+    background: #f7f7f7; }
+  .valuepairs tr td {
+    text-align: left;
+    padding: 2px 4px;
+    width: 50%; }
+
+/* Sorted tables */
+table.sorted th.header {
+  cursor: pointer;
+  padding-right: 0.125rem; }
+  table.sorted th.header:after {
+    content: '\00A0';
+    font-family: 'FontAwesome';
+    color: #333;
+    display: inline-block;
+    width: 1rem;
+    text-align: right; }
+table.sorted th.headerSortUp, table.sorted th.headerSortDown {
+  background: -moz-linear-gradient(top, #e5e5e5 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #e5e5e5 0%, #ffffff 100%);
+  background: linear-gradient(top, #e5e5e5 0%, #ffffff 100%); }
+table.sorted th.headerSortUp:after {
+  content: ' \f0d7';
+  /* .fa-caret-down */ }
+table.sorted th.headerSortDown:after {
+  content: ' \f0d8';
+  /* .fa-caret-up */ }
+
+#search-results {
+  /*
+  .results .result {
+    list-style-type: none; float: left; width: 200px; height: 220px; text-align: center;
+    .details {
+      text-align: left; width: 200px; padding: 0 10px; font-size: 14px; margin: 0; display: none;
+      background: #88E3FC; min-height: 220px; position: absolute;
+      box-shadow: 0 0 5px 3px rgba(0,0,0,.2); border: 2px solid rgba(0,0,0,.1); border-radius: 4px;
+      label  {display: inline-block; margin: 4px; }
+      .title {font-weight: bold;}
+    }
+    &:hover .details {display: block;}
+  }
+  */ }
+  #search-results .results .card {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    width: 280px;
+    height: 470px; }
+    #search-results .results .card img {
+      width: 260px; }
+    #search-results .results .card h4 {
+      font-family: sans-serif;
+      font-size: 16pt;
+      margin: 0 0 0.25rem 0;
+      font-weight: bold;
+      text-align: center; }
+    #search-results .results .card p {
+      margin: 0;
+      font-size: small; }
+    #search-results .results .card .card-section {
+      display: none;
+      min-height: 390px;
+      width: 260px;
+      border: 1px solid black;
+      padding: 0 10px;
+      margin: 0 10px;
+      background: rgba(255, 255, 255, 0.9);
+      position: absolute; }
+    #search-results .results .card:hover .card-section {
+      display: block; }
+    #search-results .results .card table.movie, #search-results .results .card table.bio {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 30px; }
+      #search-results .results .card table.movie thead, #search-results .results .card table.bio thead {
+        border: none;
+        background: transparent;
+        display: none; }
+        #search-results .results .card table.movie thead th.info, #search-results .results .card table.bio thead th.info {
+          text-align: center;
+          font-size: 1rem;
+          font-family: sans-serif; }
+      #search-results .results .card table.movie tbody, #search-results .results .card table.bio tbody {
+        border: none;
+        background: transparent; }
+        #search-results .results .card table.movie tbody tr:nth-child(2n), #search-results .results .card table.bio tbody tr:nth-child(2n) {
+          background: transparent; }
+        #search-results .results .card table.movie tbody td, #search-results .results .card table.movie tbody th, #search-results .results .card table.bio tbody td, #search-results .results .card table.bio tbody th {
+          padding: 0;
+          font-size: small;
+          vertical-align: top;
+          text-align: left; }
+        #search-results .results .card table.movie tbody th, #search-results .results .card table.bio tbody th {
+          text-align: right;
+          padding-right: 2px; }
+
+li.suggestion {
+  min-height: 80px !important; }
+  li.suggestion img {
+    float: left;
+    margin: 6px;
+    max-height: 66px; }
+
+.facets .select #choice {
+  width: 800px; }
+.facets .select ul li {
+  list-style-type: none;
+  float: left; }
+  .facets .select ul li input {
+    margin: 0.5rem 0 0.5rem 0.5rem; }
+.facets .select button {
+  float: right;
+  clear: both; }
+.facets .facet-values .values {
+  list-style-type: none; }
+  .facets .facet-values .values li {
+    font-size: 85%; }
+    .facets .facet-values .values li.selected a {
+      font-weight: bold; }
+      .facets .facet-values .values li.selected a::before {
+        content: '\2714';
+        margin-left: -15px;
+        position: absolute; }
+
+/* XML content */
+.xml {
+  font-size: 11px;
+  color: #666; }
+  .xml .e {
+    color: #a0b; }
+  .xml .a {
+    color: #16f; }
+  .xml .v {
+    color: #281; }
+  .xml .t {
+    color: black; }
+
+.reveal {
+  padding: 0;
+  border: 0; }
+  .reveal h4 {
+    color: #fff;
+    height: 3rem;
+    padding: 0.35rem 1rem;
+    background: #1DC6F5;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #1DC6F5 0%, #1DC6F5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1DC6F5 0%, #1DC6F5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1DC6F5 0%, #1DC6F5 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .reveal .reveal-content {
+    padding: 1rem; }
+  .reveal .close-reveal {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.35rem 1rem;
+    font-size: 2.25rem;
+    font-weight: normal;
+    line-height: 1; }
+    .reveal .close-reveal:hover {
+      text-decoration: none; }
+
+h2 + a.back {
+  float: right;
+  margin-top: -2.25rem; }
+
+.reveal.bios ul li {
+  list-style-type: none;
+  padding-left: 1rem; }
+
+.search a.toggle-search {
+  padding: 0 4px;
+  text-decoration: none; }
+  .search a.toggle-search.selected {
+    background: #00C2F7;
+    color: white; }

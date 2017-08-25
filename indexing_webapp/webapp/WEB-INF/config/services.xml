@@ -1,56 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE services PUBLIC "-//Berlioz//DTD::Services 1.0//EN" "http://www.weborganic.org/schema/berlioz/services-1.0.dtd">
+<!DOCTYPE service-config PUBLIC "-//Berlioz//DTD::Services 1.0//EN"
+           "https://pageseeder.org/schema/berlioz/services-1.0.dtd">
 <!--
   Berlioz Service configuration for the Movies Index Example.
 
   @author  Jean-Baptiste Reure
  -->
 <!-- Data related services -->
-<services group="default">
+<service-config>
 
-  <!-- Search term -->
-  <service id="search" method="get">
-    <url pattern="/"/>
-    <url pattern="/search"/>
-    <generator name="navigation" target="navigation"/>
-    <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"       target="html"/>
-    <generator class="org.pageseeder.berlioz.flint.GetIndexSummary" name="search-index"  target="main"/>
-    <generator class="org.pageseeder.berlioz.flint.BasicSearch"     name="basic-search"  target="main"/>
-  </service>
+  <services group="bio">
 
-  <!-- Browse index -->
-  <service id="browse" method="get">
-    <url pattern="/browse"/>
-    <generator name="navigation" target="navigation"/>
-    <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"       target="html"/>
-    <generator class="org.pageseeder.berlioz.flint.GetFacets"       name="browse-facets" target="main">
-      <parameter name="facets"     value="{facets},country,classification,genre" />
-      <parameter name="max-number" value="50" />
-    </generator>
-    <generator class="org.pageseeder.berlioz.flint.BasicSearch"     name="browse-search" target="main">
-      <parameter name="facets"     value="{facets},country,classification,genre" />
-      <parameter name="max-facets" value="50" />
-      <parameter name="field"      value="_creator" />
-      <parameter name="term"       value="berlioz" />
-      <parameter name="with"       value="{with}" />
-    </generator>
-  </service>
+    <!-- Search term -->
+    <service id="bio" method="get">
+      <url pattern="/bio/{index}"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles" target="html"/>
+      <generator class="org.pageseeder.bastille.psml.GetContentFile"  name="bio"     target="main">
+        <parameter name="path" value="/bios/bio-{index}"/>
+      </generator>
+    </service>
 
-  <!-- Search term -->
-  <service id="autosuggest" method="get">
-    <url pattern="/autosuggest"/>
-    <generator name="navigation" target="navigation"/>
-    <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"       target="html"/>
-    <generator name="autosuggest"  target="main"/>
-  </service>
+  </services>
 
-  <!-- Autosuggest -->
-  <service id="autosuggest-results" method="get">
-    <url pattern="/fields/{field}/autosuggest"/>
-    <url pattern="/autosuggest/{name}"/>
-    <generator name="navigation" target="navigation"/>
-    <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"     target="html"/>
-    <generator class="org.pageseeder.berlioz.flint.AutoSuggest"     name="autosuggest" target="main"/>
-  </service>
+  <services group="lucene">
+  
+    <!-- Search term -->
+    <service id="lucene-search" method="get">
+      <url pattern="/lucene/search"/>
+      <url pattern="/lucene/{index}/search"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles"     name="bundles"         target="html"/>
+      <generator class="org.pageseeder.flint.berlioz.lucene.GetCatalog"   name="search-films-catalog"  target="main">
+        <parameter name="index" value="films" />
+      </generator>
+      <generator class="org.pageseeder.flint.berlioz.lucene.GetCatalog"   name="search-bios-catalog"  target="main">
+        <parameter name="index" value="bios" />
+      </generator>
+      <generator class="org.pageseeder.flint.berlioz.lucene.BasicSearch"  name="basic-search"    target="main">
+      </generator>
+    </service>
 
-</services>
+    <!-- Browse index -->
+    <service id="lucene-browse" method="get">
+      <url pattern="/home"/>
+      <url pattern="/lucene/browse"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles"       target="html"/>
+      <generator class="org.pageseeder.flint.berlioz.lucene.GetFacets"       name="browse-facets" target="main">
+        <parameter name="index"      value="films"/>
+        <parameter name="facets"     value="{facets},prop_country,prop_classification,prop_genre" />
+        <parameter name="max-number" value="50" />
+      </generator>
+      <generator class="org.pageseeder.flint.berlioz.lucene.BasicSearch"     name="browse-search" target="main">
+        <parameter name="index"      value="films"/>
+        <parameter name="facets"     value="{facets},prop_country,prop_classification,prop_genre" />
+        <parameter name="max-facets" value="50" />
+        <parameter name="field"      value="type" />
+        <parameter name="term"       value="film" />
+        <parameter name="with"       value="{with}" />
+      </generator>
+    </service>
+  
+    <!-- Search term -->
+    <service id="lucene-autosuggest" method="get">
+      <url pattern="/lucene/autosuggest"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles" target="html"/>
+      <generator name="autosuggest"  target="main">
+        <parameter name="index" value="films"/>
+      </generator>
+    </service>
+  
+    <!-- Autosuggest -->
+    <service id="lucene-autosuggest-results" method="get">
+      <url pattern="/lucene/fields/{field}/autosuggest"/>
+      <url pattern="/lucene/autosuggest/{name}"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles"    name="bundles"     target="html"/>
+      <generator class="org.pageseeder.flint.berlioz.lucene.AutoSuggest" name="autosuggest" target="main">
+        <parameter name="index" value="films"/>
+      </generator>
+    </service>
+  
+    <!-- Search bio -->
+    <service id="lucene-search-bio" method="get">
+      <url pattern="/lucene/search/bio"/>
+      <generator class="org.pageseeder.flint.berlioz.lucene.BasicSearch" name="bios-search" target="main">
+        <parameter name="index"  value="bios"/>
+        <parameter name="field"  value="search-name" />
+        <parameter name="term"   value="{name}"/>
+      </generator>
+    </service>
+  
+  </services>
+
+  <services group="solr">
+  
+    <!-- Search term -->
+    <service id="solr-search" method="get">
+      <url pattern="/solr/search"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles"      name="bundles"            target="html"/>
+      <generator class="org.pageseeder.flint.berlioz.solr.BasicSearch"     name="basic-search-solr"  target="main">
+        <parameter name="index" value="films"/>
+      </generator>
+    </service>
+  
+    <!-- Browse index -->
+    <service id="solr-browse" method="get">
+      <url pattern="/solr/browse"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles"      name="bundles"            target="html"/>
+      <generator class="org.pageseeder.flint.berlioz.solr.BasicSearch"     name="browse-search-solr" target="main">
+        <parameter name="index"      value="films"/>
+        <parameter name="facets"     value="{facets},prop_country,prop_classification,prop_genre" />
+        <parameter name="max-facets" value="50" />
+        <parameter name="field"      value="*" />
+        <parameter name="term"       value="*" />
+        <parameter name="with"       value="{with}" />
+      </generator>
+    </service>
+  
+    <!-- Search term SOLR -->
+    <service id="solr-autosuggest" method="get">
+      <url pattern="/solr/autosuggest"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles" name="bundles" target="html"/>
+      <generator name="autosuggest-solr"  target="main">
+        <parameter name="index" value="films"/>
+      </generator>
+    </service>
+  
+    <!-- Autosuggest SOLR -->
+    <service id="solr-autosuggest-results" method="get">
+      <url pattern="/solr/autosuggest/{name}"/>
+      <generator name="navigation" target="navigation"/>
+      <generator class="org.pageseeder.berlioz.bundler.GetWebBundles"  name="bundles"          target="html"/>
+      <generator class="org.pageseeder.flint.berlioz.solr.AutoSuggest" name="autosuggest-solr" target="main">
+        <parameter name="index" value="films"/>
+      </generator>
+    </service>
+  
+  </services>
+
+</service-config>

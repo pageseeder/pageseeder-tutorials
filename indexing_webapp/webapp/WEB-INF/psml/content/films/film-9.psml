@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820815" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820815" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-9.psml" decodedpath="/ps/movies/data/website/content/films/film-9.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:38+10:00" modified="2016-06-01T14:16:11+10:00" title="Indiana Jones and the Last Crusade"><displaytitle>Indiana Jones and the Last Crusade</displaytitle></uri></documentinfo><fragmentinfo><locator id="777033" fragment="3" editid="1780973" modified="2016-06-01T12:39:38+10:00"/><locator id="777031" fragment="5" editid="1780972" modified="2016-06-01T12:39:38+10:00"/><locator id="777042" fragment="2" editid="1780974" modified="2016-06-01T12:39:38+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Indiana Jones and the Last Crusade</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1989"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Action</value>
+            <value>Adventure</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780960" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820790" href="../bios/bio-55.psml" urititle="Steven Spielberg" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Steven Spielberg</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780961" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820748" href="../bios/bio-56.psml" urititle="Robert Watts" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robert Watts</xref>
+            <xref id="1780962" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820835" href="../bios/bio-57.psml" urititle="George Lucas" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Lucas</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780963" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820835" href="../bios/bio-57.psml" urititle="George Lucas" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Lucas</xref>
+            <xref id="1780964" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820734" href="../bios/bio-65.psml" urititle="Jeffrey Boam" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jeffrey Boam</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780965" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820729" href="../bios/bio-58.psml" urititle="Harrison Ford" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Harrison Ford</xref>
+            <xref id="1780966" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820863" href="../bios/bio-59.psml" urititle="Sean Connery" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sean Connery</xref>
+            <xref id="1780967" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820840" href="../bios/bio-60.psml" urititle="Alison Doody" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Alison Doody</xref>
+            <xref id="1780968" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820802" href="../bios/bio-61.psml" urititle="Denholm Elliott" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Denholm Elliott</xref>
+            <xref id="1780969" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820886" href="../bios/bio-62.psml" urititle="Julian Glover" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Julian Glover</xref>
+            <xref id="1780970" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820718" href="../bios/bio-63.psml" urititle="River Phoenix" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">River Phoenix</xref>
+            <xref id="1780971" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820820" href="../bios/bio-64.psml" urititle="John Rhys-Davies" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Rhys-Davies</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Indiana Jones and the Last Crusade is a 1989 American action-adventure film directed by Steven Spielberg, from a story co-written by executive producer <xref id="1780951" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820835" href="../bios/bio-57.psml" urititle="George Lucas" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Lucas</xref>. It is the third installment in the Indiana Jones franchise. <xref id="1780952" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820729" href="../bios/bio-58.psml" urititle="Harrison Ford" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Harrison Ford</xref> reprises the title role and <xref id="1780953" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820863" href="../bios/bio-59.psml" urititle="Sean Connery" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sean Connery</xref> plays Indiana's father, Henry Jones, Sr. Other cast members featured include <xref id="1780954" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820840" href="../bios/bio-60.psml" urititle="Alison Doody" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Alison Doody</xref>, <xref id="1780955" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820802" href="../bios/bio-61.psml" urititle="Denholm Elliott" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Denholm Elliott</xref>, <xref id="1780956" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820886" href="../bios/bio-62.psml" urititle="Julian Glover" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Julian Glover</xref>, <xref id="1780957" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820718" href="../bios/bio-63.psml" urititle="River Phoenix" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">River Phoenix</xref>, and <xref id="1780958" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820820" href="../bios/bio-64.psml" urititle="John Rhys-Davies" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Rhys-Davies</xref>. In the film, set largely in 1938, Indiana searches for his father, a Holy Grail scholar, who has been kidnapped by Nazis.</para>
+         <para>After the mixed reaction to Indiana Jones and the Temple of Doom, Spielberg chose to compensate with a film that toned down the violence and gore. During the five years between Temple of Doom and Last Crusade, he and executive producer Lucas reviewed several scripts before accepting <xref id="1780959" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820734" href="../bios/bio-65.psml" urititle="Jeffrey Boam" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jeffrey Boam</xref>'s. Filming locations included Spain, Italy, the United Kingdom, Turkey and Jordan.</para>
+         <para>The film was released in North America on May 24, 1989 to mostly positive reviews. It was a financial success, earning $474,171,806 at the worldwide box office totals. It won an Academy Award for Best Sound Editing.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/indianajones.jpg" uriid="820916"/>
+      </fragment>
+   </section>
+</document>

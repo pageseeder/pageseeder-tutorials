@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820715" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820715" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-8.psml" decodedpath="/ps/movies/data/website/content/films/film-8.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:35+10:00" modified="2016-06-01T14:16:11+10:00" title="Harold and Maude"><displaytitle>Harold and Maude</displaytitle></uri></documentinfo><fragmentinfo><locator id="776891" fragment="2" editid="1780738" modified="2016-06-01T12:39:35+10:00"/><locator id="776884" fragment="5" editid="1780736" modified="2016-06-01T12:39:35+10:00"/><locator id="776886" fragment="3" editid="1780737" modified="2016-06-01T12:39:35+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Harold and Maude</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1971"/>
+         <property name="classification" title="Classification" value="M"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Romantic Comedy</value>
+            <value>Dark Commedy</value>
+            <value>Existentialist Drama</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780729" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820710" href="../bios/bio-49.psml" urititle="Hal Ashby" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Hal Ashby</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780730" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820935" href="../bios/bio-50.psml" urititle="Colin Higgins" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Colin Higgins</xref>
+            <xref id="1780731" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820805" href="../bios/bio-51.psml" urititle="Charles B. Mulvehill" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Charles B. Mulvehill</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780732" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820935" href="../bios/bio-50.psml" urititle="Colin Higgins" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Colin Higgins</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780733" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820745" href="../bios/bio-52.psml" urititle="Bud Cort" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Bud Cort</xref>
+            <xref id="1780734" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820960" href="../bios/bio-53.psml" urititle="Vivian Pickles" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Vivian Pickles</xref>
+            <xref id="1780735" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820968" href="../bios/bio-54.psml" urititle="Ruth Gordon" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ruth Gordon</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Harold and Maude is a 1971 American romantic dark comedy directed by Hal Ashby and released by Paramount Pictures. It incorporates elements of dark humor and existentialist drama, with a plot that revolves around the exploits of a young man named Harold (played by <xref id="1780725" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820745" href="../bios/bio-52.psml" urititle="Bud Cort" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Bud Cort</xref>) intrigued with death. Harold drifts away from the life that his detached mother (<xref id="1780726" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820960" href="../bios/bio-53.psml" urititle="Vivian Pickles" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Vivian Pickles</xref>) prescribes for him, and slowly develops quite a strong and close friendship and eventually a romantic relationship with a 79-year-old woman named Maude (<xref id="1780727" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820968" href="../bios/bio-54.psml" urititle="Ruth Gordon" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ruth Gordon</xref>) who teaches Harold about living life to its fullest and that life is the most precious gift of all.</para>
+         <para>The film was based on a screenplay written by <xref id="1780728" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820935" href="../bios/bio-50.psml" urititle="Colin Higgins" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Colin Higgins</xref> and published as a novel in 1971. Filming locations in the San Francisco Bay Area included both Holy Cross Cemetery and Golden Gate National Cemetery, and the ruins of the Sutro Baths.</para>
+         <para>Critically and commercially unsuccessful when originally released, the film developed a cult following and in 1983 began making a profit. The film is ranked number 45 on the American Film Institute's list of 100 Funniest Movies of all Time and was selected for preservation in the National Film Registry of the Library of Congress in 1997, for being "culturally, historically or aesthetically significant".[3] The Criterion Collection special edition Blu-ray and DVD were released June 12, 2012.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/haroldandmaude.jpg" uriid="820833"/>
+      </fragment>
+   </section>
+</document>

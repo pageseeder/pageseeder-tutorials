@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820691" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820691" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-16.psml" decodedpath="/ps/movies/data/website/content/films/film-16.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:35+10:00" modified="2016-06-01T14:16:11+10:00" title="The Princess Bride"><displaytitle>The Princess Bride</displaytitle></uri></documentinfo><fragmentinfo><locator id="776854" fragment="5" editid="1780695" modified="2016-06-01T12:39:35+10:00"/><locator id="776856" fragment="3" editid="1780696" modified="2016-06-01T12:39:35+10:00"/><locator id="776865" fragment="2" editid="1780697" modified="2016-06-01T12:39:35+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">The Princess Bride</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1987"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Action</value>
+            <value>Adventure</value>
+            <value>Comedy</value>
+            <value>Romance</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780684" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820722" href="../bios/bio-130.psml" urititle="Rob Reiner" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Rob Reiner</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780685" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820722" href="../bios/bio-130.psml" urititle="Rob Reiner" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Rob Reiner</xref>
+            <xref id="1780686" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820956" href="../bios/bio-131.psml" urititle="Andrew Scheinman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Andrew Scheinman</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780687" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820699" href="../bios/bio-137.psml" urititle="William Goldman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">William Goldman</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780688" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820740" href="../bios/bio-132.psml" urititle="Cary Elwes" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Cary Elwes</xref>
+            <xref id="1780689" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820972" href="../bios/bio-133.psml" urititle="Robin Wright" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robin Wright</xref>
+            <xref id="1780690" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820773" href="../bios/bio-134.psml" urititle="Mandy Patinkin" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Mandy Patinkin</xref>
+            <xref id="1780691" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820855" href="../bios/bio-135.psml" urititle="Chris Sarandon" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Chris Sarandon</xref>
+            <xref id="1780692" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820741" href="../bios/bio-136.psml" urititle="Christopher Guest" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Christopher Guest</xref>
+            <xref id="1780693" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820816" href="../bios/bio-138.psml" urititle="Peter Falk" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Peter Falk</xref>
+            <xref id="1780694" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820893" href="../bios/bio-139.psml" urititle="Fred Savage" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Fred Savage</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>The Princess Bride is a 1987 American fantasy comedy adventure film directed and co-produced by Rob Reiner, and starring <xref id="1780676" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820740" href="../bios/bio-132.psml" urititle="Cary Elwes" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Cary Elwes</xref>, <xref id="1780677" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820972" href="../bios/bio-133.psml" urititle="Robin Wright" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robin Wright</xref>, <xref id="1780678" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820773" href="../bios/bio-134.psml" urititle="Mandy Patinkin" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Mandy Patinkin</xref>, <xref id="1780679" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820855" href="../bios/bio-135.psml" urititle="Chris Sarandon" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Chris Sarandon</xref>, and <xref id="1780680" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820741" href="../bios/bio-136.psml" urititle="Christopher Guest" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Christopher Guest</xref>. Adapted by <xref id="1780681" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820699" href="../bios/bio-137.psml" urititle="William Goldman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">William Goldman</xref> from his 1973 novel of the same name, it tells the story about a farmhand named Westley, accompanied by befriended companions along the way, who must rescue his true love Princess Buttercup from the odious Prince Humperdinck. The story is presented in the film as a book being read by a grandfather (<xref id="1780682" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820816" href="../bios/bio-138.psml" urititle="Peter Falk" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Peter Falk</xref>) to his sick grandson (<xref id="1780683" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820893" href="../bios/bio-139.psml" urititle="Fred Savage" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Fred Savage</xref>), thus effectively preserving the novel's narrative style.</para>
+         <para>Released in the United States on September 25, 1987, the film initially achieved moderate success at the box office. Despite being a moderate success, the film received critical acclaim from film critics. Since its release, the film was successful in the home video market and later developed a much more substantial following as a cult classic.[1] This film is number 50 on Bravo's "100 Funniest Movies", number 88 on The American Film Institute's (AFI) "AFI's 100 Years...100 Passions" list of the 100 greatest film love stories, and 46 in Channel 4's 50 Greatest Comedy Films list.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/theprincessbride.jpg" uriid="820776"/>
+      </fragment>
+   </section>
+</document>

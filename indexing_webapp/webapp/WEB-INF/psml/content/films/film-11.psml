@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820747" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820747" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-11.psml" decodedpath="/ps/movies/data/website/content/films/film-11.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:36+10:00" modified="2016-06-01T14:16:11+10:00" title="King Kong"><displaytitle>King Kong</displaytitle></uri></documentinfo><fragmentinfo><locator id="776957" fragment="2" editid="1780842" modified="2016-06-01T12:39:36+10:00"/><locator id="776949" fragment="5" editid="1780840" modified="2016-06-01T12:39:36+10:00"/><locator id="776951" fragment="3" editid="1780841" modified="2016-06-01T12:39:36+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">King Kong</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1933"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Action</value>
+            <value>Adventure</value>
+            <value>Drama</value>
+            <value>Romance</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780830" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820909" href="../bios/bio-75.psml" urititle="Merian C. Cooper" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Merian C. Cooper</xref>
+            <xref id="1780831" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820758" href="../bios/bio-76.psml" urititle="Ernest B. Schoedsack" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ernest B. Schoedsack</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780832" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820909" href="../bios/bio-75.psml" urititle="Merian C. Cooper" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Merian C. Cooper</xref>
+            <xref id="1780833" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820758" href="../bios/bio-76.psml" urititle="Ernest B. Schoedsack" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ernest B. Schoedsack</xref>
+            <xref id="1780834" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820786" href="../bios/bio-77.psml" urititle="David O. Selznick" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">David O. Selznick</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780835" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820838" href="../bios/bio-78.psml" urititle="James Ashmore Creelman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">James Ashmore Creelman</xref>
+            <xref id="1780836" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820922" href="../bios/bio-79.psml" urititle="Ruth Rose" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ruth Rose</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780837" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820949" href="../bios/bio-80.psml" urititle="Fay Wray" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Fay Wray</xref>
+            <xref id="1780838" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820684" href="../bios/bio-81.psml" urititle="Bruce Cabot" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Bruce Cabot</xref>
+            <xref id="1780839" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820904" href="../bios/bio-82.psml" urititle="Robert Armstrong" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robert Armstrong</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>King Kong is a 1933 American Pre-Code fantasy monster/adventure film directed and produced by Merian C. Cooper and Ernest B. Schoedsack. The screenplay by
+				<xref id="1780825" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820838" href="../bios/bio-78.psml" urititle="James Ashmore Creelman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">James Ashmore Creelman</xref>
+				and <xref id="1780826" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820922" href="../bios/bio-79.psml" urititle="Ruth Rose" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ruth Rose</xref> was from an idea conceived by Cooper and Edgar Wallace. It stars <xref id="1780827" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820949" href="../bios/bio-80.psml" urititle="Fay Wray" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Fay Wray</xref>, <xref id="1780828" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820684" href="../bios/bio-81.psml" urititle="Bruce Cabot" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Bruce Cabot</xref> and <xref id="1780829" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820904" href="../bios/bio-82.psml" urititle="Robert Armstrong" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robert Armstrong</xref>, and opened in New York City on March 2, 1933 to rave reviews. It has been ranked by movie site Rotten Tomatoes as Greatest horror film of all time. </para>
+         <para>The film tells of a gigantic, prehistoric, island-dwelling ape called Kong who dies in an attempt to possess a beautiful young woman. King Kong is especially noted for its stop-motion animation by Willis O'Brien and a groundbreaking musical score by Max Steiner. In 1991, it was deemed "culturally, historically and aesthetically significant" by the Library of Congress and selected for preservation in the National Film Registry. It has been remade twice: in 1976 and in 2005.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/kingkong.jpg" uriid="820842"/>
+      </fragment>
+   </section>
+</document>

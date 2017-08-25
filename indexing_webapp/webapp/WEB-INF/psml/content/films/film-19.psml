@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820732" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820732" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-19.psml" decodedpath="/ps/movies/data/website/content/films/film-19.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:36+10:00" modified="2016-06-01T14:16:11+10:00" title="Solaris"><displaytitle>Solaris</displaytitle></uri></documentinfo><fragmentinfo><locator id="776920" fragment="2" editid="1780784" modified="2016-06-01T12:39:36+10:00"/><locator id="776911" fragment="3" editid="1780783" modified="2016-06-01T12:39:36+10:00"/><locator id="776909" fragment="5" editid="1780782" modified="2016-06-01T12:39:36+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Solaris</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1972"/>
+         <property name="classification" title="Classification" value="M"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Drama</value>
+            <value>Mystery</value>
+            <value>Romance</value>
+            <value>Science Fiction</value>
+         </property>
+         <property name="country" title="Country" value="USSR"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780771" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820823" href="../bios/bio-161.psml" urititle="Andrei Tarkovsky" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Andrei Tarkovsky</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780772" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820903" href="../bios/bio-162.psml" urititle="Viacheslav Tarasov" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Viacheslav Tarasov</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780773" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820823" href="../bios/bio-161.psml" urititle="Andrei Tarkovsky" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Andrei Tarkovsky</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780774" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820728" href="../bios/bio-163.psml" urititle="Natalya Bondarchuk" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Natalya Bondarchuk</xref>
+            <xref id="1780775" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820765" href="../bios/bio-164.psml" urititle="Donatas Banionis" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Donatas Banionis</xref>
+            <xref id="1780776" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820803" href="../bios/bio-165.psml" urititle="Juri Jarvet" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Juri Jarvet</xref>
+            <xref id="1780777" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820721" href="../bios/bio-166.psml" urititle="Vladislav Dvorzhetsky" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Vladislav Dvorzhetsky</xref>
+            <xref id="1780778" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820825" href="../bios/bio-167.psml" urititle="Nikolai Grinko" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Nikolai Grinko</xref>
+            <xref id="1780779" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820873" href="../bios/bio-168.psml" urititle="Olga Barnet" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Olga Barnet</xref>
+            <xref id="1780780" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820920" href="../bios/bio-169.psml" urititle="Anatoli Solonitsyn" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Anatoli Solonitsyn</xref>
+            <xref id="1780781" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820953" href="../bios/bio-170.psml" urititle="Sos Sargsyan" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sos Sargsyan</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Solaris (Russian: ???????, tr. Solyaris) is a 1972 Russian science fiction art film adaptation of Polish author Stanislaw Lem's novel Solaris (1961). The film was co-written and directed by <xref id="1780762" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820823" href="../bios/bio-161.psml" urititle="Andrei Tarkovsky" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Andrei Tarkovsky</xref>.[2][3] The film is a meditative psychological drama occurring mostly aboard a space station orbiting the fictional planet Solaris. The scientific mission has stalled because the skeleton crew of three scientists have fallen into separate emotional crises. Psychologist Kris Kelvin travels to the Solaris space station to evaluate the situation only to encounter the same mysterious phenomena as the others.</para>
+         <para>The original science fiction novel is about the ultimate inadequacy of communication between humans and other species. Tarkovsky's adaptation is a "drama of grief and partial recovery" concentrated upon the thoughts and the consciences of the cosmonaut scientists studying Solaris' mysterious ocean.[citation needed] In loyalty to the novel's complex and slow-paced narrative, Tarkovsky wanted to bring a new emotional and intellectual depth to the genre, viewing most of western science fiction as shallow.[4] The ideas which Tarkovsky tried to express in this film are further developed in Stalker (1979).</para>
+         <para>The critically successful Solaris features <xref id="1780763" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820728" href="../bios/bio-163.psml" urititle="Natalya Bondarchuk" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Natalya Bondarchuk</xref> (Hari), <xref id="1780764" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820765" href="../bios/bio-164.psml" urititle="Donatas Banionis" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Donatas Banionis</xref> (Kris Kelvin), <xref id="1780765" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820803" href="../bios/bio-165.psml" urititle="Juri Jarvet" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Juri Jarvet</xref> (Dr Snaut), <xref id="1780766" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820721" href="../bios/bio-166.psml" urititle="Vladislav Dvorzhetsky" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Vladislav Dvorzhetsky</xref> (Henri Berton), <xref id="1780767" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820825" href="../bios/bio-167.psml" urititle="Nikolai Grinko" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Nikolai Grinko</xref> (Kris Kelvin's Father), <xref id="1780768" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820873" href="../bios/bio-168.psml" urititle="Olga Barnet" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Olga Barnet</xref> (Kris Kelvin's Mother), <xref id="1780769" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820920" href="../bios/bio-169.psml" urititle="Anatoli Solonitsyn" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Anatoli Solonitsyn</xref> (Dr Sartorius), and <xref id="1780770" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820953" href="../bios/bio-170.psml" urititle="Sos Sargsyan" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sos Sargsyan</xref> (Dr Gibarian); the music is by Johann Sebastian Bach and Eduard Artemyev. At the 1972 Cannes Film Festival, it won the Grand Prix Special du Jury, the FIPRESCI prize and was nominated for the Palme d'Or.[6] The film is often cited as one of the greatest science fiction films in the history of cinematography.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/solaris.jpg" uriid="820895"/>
+      </fragment>
+   </section>
+</document>

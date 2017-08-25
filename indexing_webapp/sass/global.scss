@@ -1,0 +1,30 @@
+/**
+ * Default Styles for the Berlioz Application.
+ */
+@import "settings";
+@import "base";
+@import "layout";
+@import "components";
+
+// back link
+h2 + a.back {float: right; margin-top: -2.25rem;}
+
+// bios choice reveal dialog
+.reveal.bios {
+  ul li {
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+}
+
+// index search toggle
+.search {
+  a.toggle-search {
+    padding: 0 4px;
+    text-decoration: none;
+    &.selected {
+      background: $nav-bgcolor-bottom;
+      color: white;
+    }
+  }
+}

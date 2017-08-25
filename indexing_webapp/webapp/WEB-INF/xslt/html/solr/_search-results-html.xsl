@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!--
+
+  @author Christophe Lauret
+  @version 26 September 2011
+-->
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                              xmlns:dec="java:java.net.URLDecoder"
+                              xmlns:ps="http://www.pageseeder.com/editing/2.0"
+                              xmlns:bf="http://weborganic.org/Berlioz/XSLT/Function"
+                              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                              exclude-result-prefixes="xsl ps dec bf xs">
+
+<xsl:template match="content" mode="search-results-html">
+  <section id="search-results">
+    <h3>Search Results</h3>
+    <xsl:choose>
+      <xsl:when test="not(index-search/documents/document)">
+        <p>No results from search <code><xsl:value-of select="index-search/@field" />:<xsl:value-of select="index-search/@term" /></code>.</p>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="with">
+          <xsl:variable name="params" select="index-search//query//parameters/term-parameter" />
+          <xsl:if test="$params">
+            <xsl:text> with facets </xsl:text>
+            <xsl:for-each select="$params">
+              <xsl:choose>
+                <xsl:when test="position() = 0" />
+                <xsl:when test="position() = last()"> and </xsl:when>
+                <xsl:when test="position() != 0">, </xsl:when>
+              </xsl:choose>
+              <code><xsl:value-of select="index-search/@field"/>:<xsl:value-of select="text"/></code>
+            </xsl:for-each>
+          </xsl:if>
+        </xsl:variable>
+        <p>Found <xsl:value-of select="index-search/results/@total" /> results<xsl:value-of select="$with" />.</p>
+        <xsl:if test="index-search/results[@last-page != '1']">
+          <xsl:variable name="current" select="number(index-search/results/@current-page)" />
+          <xsl:variable name="total"   select="number(index-search/results/@last-page)" />
+          <ul class="pagination">
+            <xsl:for-each select="xs:integer(max((1, $current - 3))) to xs:integer(min(($current + 3, $total)))">
+              <li class="page{if (. = $current) then ' current' else ''}">
+                <a href="#" data-page="{.}"><xsl:value-of select="." /></a>
+              </li>
+            </xsl:for-each>
+          </ul>
+        </xsl:if>
+        <ol class="results">
+          <xsl:apply-templates select="index-search/documents" mode="html" />
+        </ol>
+      </xsl:otherwise>
+    </xsl:choose>
+  </section>
+</xsl:template>
+
+<xsl:template match="document" mode="html">
+  <xsl:param name="expand" select="false()" tunnel="yes" />
+  <!--
+  <li class="result">
+    <ul class="details">
+      <li class="title"><xsl:value-of select="field[@name = 'title']" /></li>
+      <li><xsl:value-of select="concat(field[@name = 'prop_year'], ', ', field[@name = 'prop_country'])" /></li>
+      <li><label>Genre: </label><xsl:value-of    select="string-join(field[@name = 'prop_genre'],    '/')" /></li>
+      <li><label>Director: </label><xsl:value-of select="string-join(field[@name = 'prop_director'], ', ')" /></li>
+      <li><label>Cast: </label><xsl:value-of     select="string-join(field[@name = 'prop_actor'],    ', ')" /></li>
+    </ul>
+    <img src="{field[@name = 'image']}" width="120" />
+    <div class="film-title"><xsl:value-of select="bf:document-title(.)" /></div>
+  </li>
+  -->
+  <li class="result card">
+    <h4 class="movie_title"><xsl:value-of select="bf:document-title(.)" /></h4>
+    <div class="card-section">
+      <table class="movie">
+        <thead><tr><th colspan="3" class="info"><xsl:value-of select="field[@name = 'title']" /></th></tr></thead>
+        <tbody>
+          <tr>
+            <th colspan="2"><b>Director:</b></th>
+            <td>
+              <xsl:for-each select="field[@name = 'prop_director']">
+                <p>
+                  <a class="bio" href="/lucene/search/bio.xml?name={encode-for-uri(normalize-space(replace(lower-case(.), '[^a-z ]', ' ')))}"><xsl:value-of select="." /></a>
+                  <xsl:if test="position() != last()">,</xsl:if>
+                </p>
+              </xsl:for-each>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2"><b>Year:</b></th>
+            <td><a href="/lucene/browse.html?with=prop_year:{field[@name = 'prop_year']}"><xsl:value-of select="field[@name = 'prop_year']" /></a></td>
+          </tr>
+          <tr>
+            <td class="blank-cell"></td>
+            <th class="title">Cast:</th>
+            <td>
+              <xsl:for-each select="field[@name = 'prop_actor']">
+                <p>
+                  <xsl:for-each select="tokenize(., '[^a-zA-Z]')">
+                    <a class="bio" href="/lucene/search/bio.xml?name={encode-for-uri(lower-case(.))}"><xsl:value-of select="." /></a>
+                    <xsl:text> </xsl:text>
+                  </xsl:for-each>
+                  <xsl:if test="position() != last()">,</xsl:if>
+                </p>
+              </xsl:for-each>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="blank-cell"></td>
+            <th class="title">Genre:</th>
+            <td>
+              <xsl:for-each select="field[@name = 'prop_genre']">
+                <p>
+                  <a href="/lucene/browse.html?with=prop_genre:{encode-for-uri(.)}"><xsl:value-of select="." /></a>
+                  <xsl:if test="position() != last()">/</xsl:if>
+                </p>
+              </xsl:for-each>
+            </td>
+          </tr>
+          <tr>
+            <td class="blank-cell"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <img src="{field[@name = 'image']}" />
+  </li>
+</xsl:template>
+
+<xsl:function name="bf:document-title">
+  <xsl:param name="doc" as="element(document)" />
+  <xsl:choose>
+    <xsl:when test="$doc/field[@name = 'title']"><xsl:value-of select="$doc/field[@name = 'title']" /></xsl:when>
+    <xsl:when test="$doc/field[@name = 'name' ]"><xsl:value-of select="$doc/field[@name = 'name']" /></xsl:when>
+    <xsl:otherwise><xsl:value-of select="$doc/field[@name = '_path']" /></xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+</xsl:stylesheet>

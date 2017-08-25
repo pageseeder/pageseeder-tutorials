@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820900" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820900" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-13.psml" decodedpath="/ps/movies/data/website/content/films/film-13.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:39+10:00" modified="2016-06-01T14:16:11+10:00" title="Miller&#39;s Crossing"><displaytitle>Miller's Crossing</displaytitle></uri></documentinfo><fragmentinfo><locator id="777121" fragment="2" editid="1781090" modified="2016-06-01T12:39:39+10:00"/><locator id="777114" fragment="3" editid="1781089" modified="2016-06-01T12:39:39+10:00"/><locator id="777112" fragment="5" editid="1781088" modified="2016-06-01T12:39:39+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Miller's Crossing</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1990"/>
+         <property name="classification" title="Classification" value="M"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Crime</value>
+            <value>Drama</value>
+            <value>Thriller</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1781080" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820756" href="../bios/bio-89.psml" urititle="Joel Coen" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Joel Coen</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1781081" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820681" href="../bios/bio-90.psml" urititle="Ethan Coen" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ethan Coen</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref"/>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1781082" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820930" href="../bios/bio-91.psml" urititle="Gabriel Byrne" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Gabriel Byrne</xref>
+            <xref id="1781083" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820894" href="../bios/bio-92.psml" urititle="Marcia Gay Harden" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Marcia Gay Harden</xref>
+            <xref id="1781084" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820941" href="../bios/bio-93.psml" urititle="John Turturro" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Turturro</xref>
+            <xref id="1781085" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820798" href="../bios/bio-94.psml" urititle="Jon Polito" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jon Polito</xref>
+            <xref id="1781086" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820921" href="../bios/bio-95.psml" urititle="J. E. Freeman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">J. E. Freeman</xref>
+            <xref id="1781087" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820720" href="../bios/bio-96.psml" urititle="Albert Finney" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Albert Finney</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Miller's Crossing is a 1990 American neo-noir black comedy gangster film written and directed by the Coen brothers, and starring <xref id="1781074" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820930" href="../bios/bio-91.psml" urititle="Gabriel Byrne" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Gabriel Byrne</xref>, <xref id="1781075" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820894" href="../bios/bio-92.psml" urititle="Marcia Gay Harden" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Marcia Gay Harden</xref>, <xref id="1781076" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820941" href="../bios/bio-93.psml" urititle="John Turturro" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Turturro</xref>, <xref id="1781077" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820798" href="../bios/bio-94.psml" urititle="Jon Polito" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jon Polito</xref>, <xref id="1781078" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820921" href="../bios/bio-95.psml" urititle="J. E. Freeman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">J. E. Freeman</xref>, and <xref id="1781079" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820720" href="../bios/bio-96.psml" urititle="Albert Finney" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Albert Finney</xref>. The plot concerns a power struggle between two rival gangs and how the protagonist, Tom Regan[1] (Gabriel Byrne), plays both sides off against each other.</para>
+         <para>In 2005, TIME chose Miller's Crossing as one of the 100 greatest films made since the inception of the periodical. TIME critic Richard Corliss called it a "noir with a touch so light, the film seems to float on the breeze like the frisbee of a fedora sailing through the forest."</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/millerscrossing.jpg" uriid="820946"/>
+      </fragment>
+   </section>
+</document>

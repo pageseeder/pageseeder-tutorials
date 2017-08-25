@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820680" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820680" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-1.psml" decodedpath="/ps/movies/data/website/content/films/film-1.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:35+10:00" modified="2016-06-01T14:16:11+10:00" title="Annie Hall"><displaytitle>Annie Hall</displaytitle></uri><reversexrefs><reversexref uriid="820783" href="../bios/bio-4.psml" frag="3" urititle="Diane Keaton" id="1780926" title="" type="none" forwardtype="none" forwarddisplay="document" forwardfrag="default"/><reversexref uriid="820801" href="../bios/bio-1.psml" frag="3" urititle="Heywood &quot;Woody&quot; Allen" id="1780930" title="" type="none" forwardtype="none" forwarddisplay="document" forwardfrag="default"/></reversexrefs></documentinfo><fragmentinfo><locator id="776852" fragment="2" editid="1780674" modified="2016-06-01T12:39:35+10:00"/><locator id="776848" fragment="3" editid="1780673" modified="2016-06-01T12:39:35+10:00"/><locator id="776846" fragment="5" editid="1780672" modified="2016-06-01T12:39:35+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Annie Hall</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1977"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Romantic Comedy</value>
+            <value>Drama</value>
+            <value>Comedy</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780667" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820801" href="../bios/bio-1.psml" urititle="Heywood &quot;Woody&quot; Allen" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Heywood "Woody" Allen</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780668" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820860" href="../bios/bio-3.psml" urititle="Charles H. Joffe" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Charles H. Joffe</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780669" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820801" href="../bios/bio-1.psml" urititle="Heywood &quot;Woody&quot; Allen" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Heywood "Woody" Allen</xref>
+            <xref id="1780670" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820864" href="../bios/bio-2.psml" urititle="Marshall Brickman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Marshall Brickman</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780671" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820783" href="../bios/bio-4.psml" urititle="Diane Keaton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Diane Keaton</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Annie Hall is a 1977 American romantic comedy film directed by <xref id="1780663" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820801" href="../bios/bio-1.psml" urititle="Heywood &quot;Woody&quot; Allen" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Heywood "Woody" Allen</xref> from a screenplay he co-wrote with <xref id="1780664" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820864" href="../bios/bio-2.psml" urititle="Marshall Brickman" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Marshall Brickman</xref>. Produced by Allen's manager,  <xref id="1780665" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820860" href="../bios/bio-3.psml" urititle="Charles H. Joffe" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Charles H. Joffe</xref>, the film stars the director as Alvy "Max" Singer, who tries to figure out the reasons for the failure of his relationship with the film's eponymous female lead, played by <xref id="1780666" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820783" href="../bios/bio-4.psml" urititle="Diane Keaton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Diane Keaton</xref> in a role written specifically for her.</para>
+         <para>Principal photography for the film began on May 19, 1976 on the South Fork of Long Island, and filming continued periodically for the next ten months. Allen has described the result, which marked his first collaboration with cinematographer Gordon Willis, as "a major turning point", in that unlike the farces and comedies that were his work to that point, it introduced a new level of seriousness. Academics have noted the contrast in the settings of New York City and Los Angeles, the stereotype of gender differences in sexuality, the presentation of Jewish identity, and the elements of psychoanalysis and modernism.</para>
+         <para>Annie Hall was screened at the Los Angeles Film Festival in March 1977, before its official release on April 20, 1977. The film received widespread critical acclaim, and along with winning the Academy Award for Best Picture, it received Oscars in three other categories: two for Allen (Best Director and, with Brickman, Best Original Screenplay), and Keaton for Best Actress. The film additionally won four BAFTA awards and a Golden Globe, the latter being awarded to Keaton. Its North American box office receipts of $38,251,425 are fourth-best in the director's oeuvre when not adjusted for inflation. Often listed among the greatest film comedies, it ranks 31st on AFI's list of the top feature films in American cinema, fourth on their list of top comedy films and number 28 on Bravo's "100 Funniest Movies." Film critic Roger Ebert called it "just about everyone's favorite Woody Allen movie". The film has been named the funniest screenplay by the Writers Guild of America in its list of the "101 Funniest Screenplays."</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/anniehall.jpg" uriid="820936"/>
+      </fragment>
+   </section>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820892" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820892" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-21.psml" decodedpath="/ps/movies/data/website/content/films/film-21.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:39+10:00" modified="2016-06-01T14:16:11+10:00" title="Up"><displaytitle>Up</displaytitle></uri></documentinfo><fragmentinfo><locator id="777085" fragment="5" editid="1781044" modified="2016-06-01T12:39:39+10:00"/><locator id="777087" fragment="3" editid="1781045" modified="2016-06-01T12:39:39+10:00"/><locator id="777091" fragment="2" editid="1781046" modified="2016-06-01T12:39:39+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Up</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="2009"/>
+         <property name="classification" title="Classification" value="G"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Adventure</value>
+            <value>Comedy</value>
+            <value>Drama</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1781039" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820845" href="../bios/bio-181.psml" urititle="Pete Docter" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Pete Docter</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1781040" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820957" href="../bios/bio-182.psml" urititle="Jonas Rivera" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jonas Rivera</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1781041" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820899" href="../bios/bio-185.psml" urititle="Bob Peterson" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Bob Peterson</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1781042" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820792" href="../bios/bio-183.psml" urititle="Edward Asner" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Edward Asner</xref>
+            <xref id="1781043" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820752" href="../bios/bio-184.psml" urititle="Jordan Nagai" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jordan Nagai</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Up is a 2009 American 3D computer-animated comedy adventure[3] film produced by Pixar and released by Walt Disney Pictures. Directed by Pete Docter, the film centers on an elderly widower named Carl Fredricksen (<xref id="1781036" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820792" href="../bios/bio-183.psml" urititle="Edward Asner" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Edward Asner</xref>) and an earnest young Wilderness Explorer named Russell (<xref id="1781037" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820752" href="../bios/bio-184.psml" urititle="Jordan Nagai" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jordan Nagai</xref>). By tying thousands of balloons to his home, 78-year-old Carl sets out to fulfill his dream to see the wilds of South America and to complete a promise made to his late wife, Ellie. The film was co-directed by <xref id="1781038" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820899" href="../bios/bio-185.psml" urititle="Bob Peterson" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Bob Peterson</xref>, with music composed by Michael Giacchino.</para>
+         <para>Docter began working on the story in 2004, which was based on fantasies of escaping from life when it becomes too irritating. He and eleven other Pixar artists spent three days in Venezuela gathering research and inspiration. The designs of the characters were caricatured and stylized considerably, and animators were challenged with creating realistic cloth. The floating house is attached by a varying number between 10,000 and 20,000 balloons in the film's sequences. Up was Pixar's first film to be presented in Disney Digital 3-D.</para>
+         <para>Up was released on May 29, 2009 and opened the 2009 Cannes Film Festival, becoming the first animated and 3D film to do so.[5] The film became a great financial success, accumulating over $731 million in its theatrical release. Up received universal acclaim, with most reviewers commending the humor and heart of the film. Edward Asner was praised for his portrayal of Carl, and a montage of Carl and his wife Ellie aging together was widely lauded. The film received five Academy Award nominations, including Best Picture, making it the second animated film in history to receive such a nomination (and Pixar's first Best Picture nomination), following Beauty and the Beast (1991).[6]</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/up.jpg" uriid="820955"/>
+      </fragment>
+   </section>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+  This file contains the global settings made available to generators in development mode (dev).
+
+  @version BerliozBase-0.8.1
+-->
+<global>
+
+  <berlioz profile="true">
+    <http get-via-post="true" max-age="45"/>
+    <xml parse-strict="true"/>
+    <cssbundler minimize="true" location="/style/_/">
+      <configs default="global,group,service"/>
+      <bundles global="/style/global.css"
+                group="/style/{GROUP}.css"
+              service="/style/{GROUP}/{SERVICE}.css"/>
+    </cssbundler>
+
+    <jsbundler minimize="true" location="/script/_/">
+      <configs default="global,group,service"/>
+      <bundles global="/script/global.js"
+                group="/script/{GROUP}.js"
+              service="/script/{GROUP}/{SERVICE}.js"
+      />
+    </jsbundler>
+  </berlioz>
+
+  <flint>
+    <watcher max-folders="-1" delay="0" />
+    <index types="films,bios">
+      <films name="films" path="/psml/content/films"  template="films.xsl" autosuggests="words,people,movies,usmovies">
+        <words     fields="fulltext"                       terms="true" />
+        <people    fields="prop_actor,prop_director,prop_producer,prop_writer" />
+        <movies    fields="title,prop_actor,prop_director" result-fields="image,title,prop_year,prop_genre,prop_country" />
+        <usmovies  fields="title,prop_actor,prop_director" result-fields="image,title,prop_year,prop_genre,prop_country" weight="american-level:2" />
+      </films>
+      <bios name="bios" path="/psml/content/bios" template="bios.xsl" />
+    </index>
+  </flint>
+
+</global>

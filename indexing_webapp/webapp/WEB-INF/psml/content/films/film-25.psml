@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820679" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820679" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-25.psml" decodedpath="/ps/movies/data/website/content/films/film-25.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:35+10:00" modified="2016-06-01T14:16:11+10:00" title="The Year My Voice Broke"><displaytitle>The Year My Voice Broke</displaytitle></uri></documentinfo><fragmentinfo><locator id="776837" fragment="3" editid="1780660" modified="2016-06-01T12:39:35+10:00"/><locator id="776835" fragment="5" editid="1780659" modified="2016-06-01T12:39:35+10:00"/><locator id="776841" fragment="2" editid="1780661" modified="2016-06-01T12:39:35+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">The Year My Voice Broke</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1987"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Drama</value>
+            <value>Romance</value>
+         </property>
+         <property name="country" title="Country" value="Australia"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780651" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820701" href="../bios/bio-216.psml" urititle="John Duigan" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Duigan</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780652" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820853" href="../bios/bio-217.psml" urititle="Terry Hayes" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Terry Hayes</xref>
+            <xref id="1780653" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820810" href="../bios/bio-218.psml" urititle="George Miller" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">George Miller</xref>
+            <xref id="1780654" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820711" href="../bios/bio-219.psml" urititle="Doug Mitchell" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Doug Mitchell</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780655" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820701" href="../bios/bio-216.psml" urititle="John Duigan" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Duigan</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780656" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820971" href="../bios/bio-220.psml" urititle="Noah Taylor" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Noah Taylor</xref>
+            <xref id="1780657" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820705" href="../bios/bio-221.psml" urititle="Loene Carmen" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Loene Carmen</xref>
+            <xref id="1780658" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820902" href="../bios/bio-222.psml" urititle="Ben Mendelsohn" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ben Mendelsohn</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>The Year My Voice Broke is a 1987 coming of age drama film written and directed by <xref id="1780647" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820701" href="../bios/bio-216.psml" urititle="John Duigan" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">John Duigan</xref> and starring <xref id="1780648" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820971" href="../bios/bio-220.psml" urititle="Noah Taylor" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Noah Taylor</xref>, <xref id="1780649" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820705" href="../bios/bio-221.psml" urititle="Loene Carmen" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Loene Carmen</xref>, and <xref id="1780650" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820902" href="../bios/bio-222.psml" urititle="Ben Mendelsohn" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Ben Mendelsohn</xref>.</para>
+         <para>Set in 1962 in the rural Southern Tablelands of New South Wales, it was the first in a projected trilogy of films centred on the experiences of an awkward Australian boy, based on the childhood of writer/director John Duigan. Although the trilogy never came to fruition, it was followed by a sequel, Flirting. It was the recipient of the 1987 Australian Film Institute Award for Best Film.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/theyearmyvoicebroke.jpg" uriid="820688"/>
+      </fragment>
+   </section>
+</document>

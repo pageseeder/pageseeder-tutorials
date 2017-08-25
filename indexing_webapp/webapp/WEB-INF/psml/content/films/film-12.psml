@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820812" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820812" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-12.psml" decodedpath="/ps/movies/data/website/content/films/film-12.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:38+10:00" modified="2016-06-01T14:16:11+10:00" title="Life Is Beautiful"><displaytitle>Life Is Beautiful</displaytitle></uri></documentinfo><fragmentinfo><locator id="777027" fragment="2" editid="1780949" modified="2016-06-01T12:39:38+10:00"/><locator id="777023" fragment="3" editid="1780948" modified="2016-06-01T12:39:38+10:00"/><locator id="777021" fragment="5" editid="1780947" modified="2016-06-01T12:39:38+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Life Is Beautiful</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1998"/>
+         <property name="classification" title="Classification" value="M"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Tragi Comedy</value>
+            <value>Drama</value>
+            <value>Romance</value>
+         </property>
+         <property name="country" title="Country" value="Italy"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780941" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820761" href="../bios/bio-83.psml" urititle="Roberto Benigni" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Roberto Benigni</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780942" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820887" href="../bios/bio-84.psml" urititle="Gianluigi Braschi" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Gianluigi Braschi</xref>
+            <xref id="1780943" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820965" href="../bios/bio-85.psml" urititle="Elda Ferri" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Elda Ferri</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780944" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820885" href="../bios/bio-86.psml" urititle="Roberto Benigni" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Roberto Benigni</xref>
+            <xref id="1780945" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820714" href="../bios/bio-87.psml" urititle="Vincenzo Cerami" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Vincenzo Cerami</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780946" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820791" href="../bios/bio-88.psml" urititle="Benigni" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Benigni</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Life Is Beautiful is a 1997 Italian tragicomic comedy-drama film directed by and starring <xref id="1780938" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820885" href="../bios/bio-86.psml" urititle="Roberto Benigni" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Roberto Benigni</xref>, who co-wrote the film with <xref id="1780939" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820714" href="../bios/bio-87.psml" urititle="Vincenzo Cerami" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Vincenzo Cerami</xref>. <xref id="1780940" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820791" href="../bios/bio-88.psml" urititle="Benigni" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Benigni</xref> plays Guido Orefice, a Jewish Italian book shop owner, who must employ his fertile imagination to shield his son from the horrors of internment in a Nazi concentration camp. Part of the film came from Benigni's own family history; before Roberto's birth, his father had survived three years of internment at the Bergen-Belsen concentration camp.</para>
+         <para>The film was a critical and financial success, winning Benigni the Academy Award for Best Actor at the 71st Academy Awards as well as the Academy Award for Best Original Dramatic Score and the Academy Award for Best Foreign Language Film.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/lifeisbeautiful.jpg" uriid="820889"/>
+      </fragment>
+   </section>
+</document>

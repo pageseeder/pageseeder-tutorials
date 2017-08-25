@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820901" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820901" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-15.psml" decodedpath="/ps/movies/data/website/content/films/film-15.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:39+10:00" modified="2016-06-01T14:16:11+10:00" title="On the Waterfront"><displaytitle>On the Waterfront</displaytitle></uri></documentinfo><fragmentinfo><locator id="777132" fragment="2" editid="1781108" modified="2016-06-01T12:39:39+10:00"/><locator id="777124" fragment="5" editid="1781106" modified="2016-06-01T12:39:39+10:00"/><locator id="777126" fragment="3" editid="1781107" modified="2016-06-01T12:39:39+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">On the Waterfront</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1954"/>
+         <property name="classification" title="Classification" value="PG"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Drama</value>
+            <value>Thriller</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1781098" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820872" href="../bios/bio-123.psml" urititle="Elia Kazan" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Elia Kazan</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1781099" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820865" href="../bios/bio-124.psml" urititle="Sam Spiegel" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sam Spiegel</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1781100" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820862" href="../bios/bio-125.psml" urititle="Budd Schulberg" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Budd Schulberg</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1781101" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820784" href="../bios/bio-45.psml" urititle="Marlon Brando" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Marlon Brando</xref>
+            <xref id="1781102" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820682" href="../bios/bio-126.psml" urititle="Karl Malden" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Karl Malden</xref>
+            <xref id="1781103" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820707" href="../bios/bio-127.psml" urititle="Lee J. Cobb" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Lee J. Cobb</xref>
+            <xref id="1781104" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820870" href="../bios/bio-128.psml" urititle="Rod Steiger" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Rod Steiger</xref>
+            <xref id="1781105" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820977" href="../bios/bio-129.psml" urititle="Eva Marie Saint" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Eva Marie Saint</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>On the Waterfront is a 1954 American crime drama film with elements of film noir. The film was directed by Elia Kazan and written by <xref id="1781092" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820862" href="../bios/bio-125.psml" urititle="Budd Schulberg" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Budd Schulberg</xref>. It stars <xref id="1781093" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820784" href="../bios/bio-45.psml" urititle="Marlon Brando" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Marlon Brando</xref> and features <xref id="1781094" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820682" href="../bios/bio-126.psml" urititle="Karl Malden" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Karl Malden</xref>, <xref id="1781095" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820707" href="../bios/bio-127.psml" urititle="Lee J. Cobb" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Lee J. Cobb</xref>, <xref id="1781096" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820870" href="../bios/bio-128.psml" urititle="Rod Steiger" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Rod Steiger</xref>, and, in her film debut, <xref id="1781097" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820977" href="../bios/bio-129.psml" urititle="Eva Marie Saint" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Eva Marie Saint</xref>. The soundtrack score was composed by Leonard Bernstein. It is based on Crime on the Waterfront, a series of articles published in the New York Sun by Malcolm Johnson that won the 1949 Pulitzer Prize for Local Reporting. The film focuses on union violence and corruption amongst longshoremen while detailing widespread corruption, extortion, and racketeering on the waterfronts of Hoboken, New Jersey.</para>
+         <para>On the Waterfront was a critical and commercial success and received 12 Academy Award nominations, winning eight, including Best Picture, Best Actor for Brando, Best Supporting Actress for Saint, and Best Director for Kazan. In 1997 it was ranked by the American Film Institute as the eighth-greatest American movie of all time and in AFI's 2007 list it was ranked 19th. It is Bernstein's only original film score not adapted from a stage production with songs.</para>
+         <para>In 1989, On the Waterfront was deemed "culturally, historically or aesthetically significant" by the Library of Congress and selected for preservation in the United States National Film Registry.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/onthewaterfront.jpg" uriid="820724"/>
+      </fragment>
+   </section>
+</document>

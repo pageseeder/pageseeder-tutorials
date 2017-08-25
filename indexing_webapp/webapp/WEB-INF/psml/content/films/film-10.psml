@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820738" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820738" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-10.psml" decodedpath="/ps/movies/data/website/content/films/film-10.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:36+10:00" modified="2016-06-01T14:16:11+10:00" title="Jaws"><displaytitle>Jaws</displaytitle></uri></documentinfo><fragmentinfo><locator id="776937" fragment="3" editid="1780822" modified="2016-06-01T12:39:36+10:00"/><locator id="776935" fragment="5" editid="1780821" modified="2016-06-01T12:39:36+10:00"/><locator id="776945" fragment="2" editid="1780823" modified="2016-06-01T12:39:36+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Jaws</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1975"/>
+         <property name="classification" title="Classification" value="M"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Adventure</value>
+            <value>Horror</value>
+            <value>Thriller</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1780811" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820790" href="../bios/bio-55.psml" urititle="Steven Spielberg" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Steven Spielberg</xref>
+            <xref id="1780812" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820944" href="../bios/bio-67.psml" urititle="David Brown" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">David Brown</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1780813" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820770" href="../bios/bio-66.psml" urititle="Richard D. Zanuck" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Richard D. Zanuck</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1780814" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820808" href="../bios/bio-68.psml" urititle="Peter Benchley" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Peter Benchley</xref>
+            <xref id="1780815" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820917" href="../bios/bio-74.psml" urititle="Carl Gottlieb" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Carl Gottlieb</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1780816" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820834" href="../bios/bio-69.psml" urititle="Roy Scheider" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Roy Scheider</xref>
+            <xref id="1780817" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820908" href="../bios/bio-70.psml" urititle="Richard Dreyfuss" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Richard Dreyfuss</xref>
+            <xref id="1780818" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820947" href="../bios/bio-71.psml" urititle="Robert Shaw" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robert Shaw</xref>
+            <xref id="1780819" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820890" href="../bios/bio-72.psml" urititle="Murray Hamilton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Murray Hamilton</xref>
+            <xref id="1780820" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820799" href="../bios/bio-73.psml" urititle="Lorraine Gary" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Lorraine Gary</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Jaws is a 1975 American film directed by Steven Spielberg and based on <xref id="1780804" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820808" href="../bios/bio-68.psml" urititle="Peter Benchley" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Peter Benchley</xref>'s 1974 novel Jaws. The prototypical summer blockbuster, its release is regarded as a watershed moment in motion picture history. In the story, a giant man-eating great white shark attacks beachgoers on Amity Island, a fictional New England summer resort town, prompting the local police chief to hunt it with the help of a marine biologist and a professional shark hunter. The film stars <xref id="1780805" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820834" href="../bios/bio-69.psml" urititle="Roy Scheider" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Roy Scheider</xref> as police chief Martin Brody, <xref id="1780806" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820908" href="../bios/bio-70.psml" urititle="Richard Dreyfuss" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Richard Dreyfuss</xref> as oceanographer Matt Hooper, <xref id="1780807" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820947" href="../bios/bio-71.psml" urititle="Robert Shaw" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Robert Shaw</xref> as shark hunter Quint, <xref id="1780808" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820890" href="../bios/bio-72.psml" urititle="Murray Hamilton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Murray Hamilton</xref> as Larry Vaughn, the mayor of Amity Island, and <xref id="1780809" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820799" href="../bios/bio-73.psml" urititle="Lorraine Gary" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Lorraine Gary</xref> as Brody's wife, Ellen. The screenplay is credited to both Benchley, who wrote the first drafts, and actor-writer <xref id="1780810" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820917" href="../bios/bio-74.psml" urititle="Carl Gottlieb" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Carl Gottlieb</xref>, who rewrote the script during principal photography.</para>
+         <para>Shot mostly on location on Martha's Vineyard in Massachusetts, the film had a troubled production, going over budget and past schedule. As the art department's mechanical sharks suffered many malfunctions, Spielberg decided to mostly suggest the animal's presence, employing an ominous, minimalistic theme created by composer John Williams to indicate the shark's impending appearances. Spielberg and others have compared this suggestive approach to that of classic thriller director Alfred Hitchcock. Universal Pictures gave the film what was then an exceptionally wide release for a major studio picture, over 450 screens, accompanied by an extensive marketing campaign with a heavy emphasis on television spots and tie-in merchandise.</para>
+         <para>Generally well received by critics, Jaws became the highest-grossing film of all time until Star Wars. It won several awards for its soundtrack and editing. Along with Star Wars, Jaws was pivotal in establishing the modern Hollywood business model, which revolves around high box-office returns from action and adventure pictures with simple "high-concept" premises that are released during the summer in thousands of theaters and supported by heavy advertising. It was followed by three sequels, none with the participation of Spielberg or Benchley, and many imitative thrillers. In 2001, Jaws was selected by the Library of Congress for preservation in the United States National Film Registry, being deemed "culturally, historically, or aesthetically significant".</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/jaws.jpg" uriid="820828"/>
+      </fragment>
+   </section>
+</document>

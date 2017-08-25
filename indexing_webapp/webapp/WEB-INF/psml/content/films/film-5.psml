@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><document id="820877" schemaversion="0.9" type="film" date="2016-06-01T14:16:11+10:00" version="current" level="portable">
+   
+   <documentinfo><uri id="820877" scheme="https" host="localhost" port="443" path="/ps/movies/data/website/content/films/film-5.psml" decodedpath="/ps/movies/data/website/content/films/film-5.psml" external="false" mediatype="application/vnd.pageseeder.psml+xml" documenttype="film" created="2016-06-01T12:39:39+10:00" modified="2016-06-01T14:16:11+10:00" title="Ed Wood"><displaytitle>Ed Wood</displaytitle></uri></documentinfo><fragmentinfo><locator id="777073" fragment="3" editid="1781033" modified="2016-06-01T12:39:39+10:00"/><locator id="777071" fragment="5" editid="1781032" modified="2016-06-01T12:39:39+10:00"/><locator id="777082" fragment="2" editid="1781034" modified="2016-06-01T12:39:39+10:00"/></fragmentinfo><metadata/><section id="title">
+      <fragment id="1">
+         <heading level="1">Ed Wood</heading>
+      </fragment>
+   </section>
+   <section id="details">
+      <properties-fragment id="2">
+         <property name="year" title="Year" value="1994"/>
+         <property name="classification" title="Classification" value="M"/>
+         <property name="genre" title="Genre" count="n">
+            <value>Biography</value>
+            <value>Comedy</value>
+            <value>Drama</value>
+         </property>
+         <property name="country" title="Country" value="USA"/>
+         <property name="director" title="Director" count="n" datatype="xref">
+            <xref id="1781020" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820882" href="../bios/bio-25.psml" urititle="Tim Burton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Tim Burton</xref>
+         </property>
+         <property name="producer" title="Producer" count="n" datatype="xref">
+            <xref id="1781021" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820882" href="../bios/bio-25.psml" urititle="Tim Burton" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Tim Burton</xref>
+            <xref id="1781022" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820891" href="../bios/bio-26.psml" urititle="Denise Di Novi" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Denise Di Novi</xref>
+         </property>
+         <property name="writer" title="Writer" count="n" datatype="xref">
+            <xref id="1781023" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820928" href="../bios/bio-34.psml" urititle="Scott Alexander" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Scott Alexander</xref>
+            <xref id="1781024" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820757" href="../bios/bio-35.psml" urititle="Larry Karaszewski" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Larry Karaszewski</xref>
+         </property>
+         <property name="actor" title="Actor" count="n" datatype="xref">
+            <xref id="1781025" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820847" href="../bios/bio-27.psml" urititle="Johnny Depp" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Johnny Depp</xref>
+            <xref id="1781026" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820692" href="../bios/bio-28.psml" urititle="Martin Landau" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Martin Landau</xref>
+            <xref id="1781027" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820896" href="../bios/bio-29.psml" urititle="Sarah Jessica Parker" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sarah Jessica Parker</xref>
+            <xref id="1781028" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820695" href="../bios/bio-30.psml" urititle="Patricia Arquette" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Patricia Arquette</xref>
+            <xref id="1781029" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820687" href="../bios/bio-31.psml" urititle="Jeffrey Jones" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jeffrey Jones</xref>
+            <xref id="1781030" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820861" href="../bios/bio-32.psml" urititle="Lisa Marie" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Lisa Marie</xref>
+            <xref id="1781031" title="" frag="default" reversefrag="2" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820685" href="../bios/bio-33.psml" urititle="Bill Murray" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Bill Murray</xref>
+         </property>
+      </properties-fragment>
+   </section>
+   <section id="summary" title="Summary">
+      <fragment id="3">
+         <para>Ed Wood is a 1994 American period comedy-drama biopic directed and produced by Tim Burton, and starring <xref id="1781011" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820847" href="../bios/bio-27.psml" urititle="Johnny Depp" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Johnny Depp</xref> as cult filmmaker Ed Wood. The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by <xref id="1781012" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820692" href="../bios/bio-28.psml" urititle="Martin Landau" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Martin Landau</xref>. <xref id="1781013" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820896" href="../bios/bio-29.psml" urititle="Sarah Jessica Parker" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Sarah Jessica Parker</xref>, <xref id="1781014" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820695" href="../bios/bio-30.psml" urititle="Patricia Arquette" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Patricia Arquette</xref>, <xref id="1781015" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820687" href="../bios/bio-31.psml" urititle="Jeffrey Jones" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Jeffrey Jones</xref>, <xref id="1781016" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820861" href="../bios/bio-32.psml" urititle="Lisa Marie" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Lisa Marie</xref>, and <xref id="1781017" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820685" href="../bios/bio-33.psml" urititle="Bill Murray" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Bill Murray</xref> are among the supporting cast.</para>
+         <para>The film was conceived by writers <xref id="1781018" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820928" href="../bios/bio-34.psml" urititle="Scott Alexander" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Scott Alexander</xref> and <xref id="1781019" title="" frag="default" reversefrag="3" reversetitle="" reverselink="true" reversetype="none" display="document" type="none" uriid="820757" href="../bios/bio-35.psml" urititle="Larry Karaszewski" mediatype="application/vnd.pageseeder.psml+xml" documenttype="bio">Larry Karaszewski</xref> when they were students at the USC School of Cinematic Arts. Irritated at being thought of solely as writers for family films with their work on Problem Child and its sequel, Alexander and Karaszewski struck a deal with Burton and Denise Di Novi to produce the Ed Wood biopic, and Michael Lehmann as director. Due to scheduling conflicts with Airheads, Lehmann had to vacate the director's position, which was taken over by Burton.</para>
+         <para>Ed Wood was originally in development at Columbia Pictures, but the studio put the film in 'turnaround' over Burton's decision to shoot in black-and-white. Ed Wood was taken to the Walt Disney Studios, which produced the film through the studio's Touchstone Pictures division. The film was released to huge critical acclaim, but it would prove to be a box office disappointment, making only $5.9 million against an $18 million budget. It won two Academy Awards: Best Supporting Actor for Landau and Best Makeup for Rick Baker (who designed Landau's prosthetic makeup), Ve Neill and Yolanda Toussieng.</para>
+      </fragment>
+   </section>
+   <section id="image" title="Image">
+      <fragment id="5">
+         <image src="images/edwood.jpg" uriid="820866"/>
+      </fragment>
+   </section>
+</document>

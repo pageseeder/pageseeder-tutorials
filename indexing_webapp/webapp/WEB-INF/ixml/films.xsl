@@ -29,8 +29,9 @@
 
 <xsl:template match="document">
   <document>
+    <field name="uriid" tokenize="false"><xsl:value-of select="/document/documentinfo/uri/@id"/></field>
     <field name="type"  tokenize="false"><xsl:value-of select="@type"/></field>
-    <field name="title" tokenize="false"><xsl:value-of select="(.//heading)[1]"/></field>
+    <field name="title" tokenize="true"><xsl:value-of select="(.//heading)[1]"/></field>
     <field name="fulltext" tokenize="true">
       <xsl:value-of select="concat(string-join(section/properties-fragment/property/@value, ' '), ' ',
                                    string-join(section/properties-fragment/property/value, ' '), ' ',
@@ -52,17 +53,17 @@
       <xsl:when test="value">
         <xsl:variable name="field" select="@name" />
         <xsl:for-each select="value">
-          <field name="{$field}" tokenize="false"><xsl:value-of select="."/></field>
+          <field name="prop_{$field}" tokenize="false"><xsl:value-of select="."/></field>
         </xsl:for-each>
       </xsl:when>
       <xsl:when test="xref">
         <xsl:variable name="field" select="@name" />
         <xsl:for-each select="xref">
-          <field name="{$field}" tokenize="false"><xsl:value-of select="."/></field>
+          <field name="prop_{$field}" tokenize="false"><xsl:value-of select="."/></field>
         </xsl:for-each>
       </xsl:when>
       <xsl:otherwise>
-        <field name="{@name}" tokenize="false"><xsl:value-of select="@value"/></field>
+        <field name="prop_{@name}" tokenize="false"><xsl:value-of select="@value"/></field>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:for-each>
@@ -70,7 +71,7 @@
 
 <!-- About -->
 <xsl:template match="section[@id='summary']">
-  <field name="summary" store="true"><xsl:value-of select="string(.)" /></field>
+  <field name="summary" store="compress"><xsl:value-of select="string(.)" /></field>
 </xsl:template>
 
 <!-- Links -->
