@@ -13,8 +13,8 @@
 
 <!-- Standard output for Flint Documents 5.0 -->
 <xsl:output method="xml" indent="no" encoding="utf-8"
-            doctype-public="-//Weborganic//DTD::Flint Index Documents 5.0//EN"
-            doctype-system="http://weborganic.org/schema/flint/index-documents-5.0.dtd"/>
+            doctype-public="-//Flint//DTD::Index Documents 5.0//EN"
+            doctype-system="https://pageseeder.org/schema/flint/index-documents-5.0.dtd"/>
 
 <xsl:param name="_filename" />
 
