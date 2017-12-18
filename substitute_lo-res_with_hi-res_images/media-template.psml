@@ -1,7 +1,7 @@
 <!--
   PSML media template for png
 -->
-<document type="png" level="metadata" xmlns:t="http://pageseeder.com/psml/template">
+<document level="metadata" xmlns:t="http://pageseeder.com/psml/template">
 
   <!-- Metadata properties --> 
   <metadata>
