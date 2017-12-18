@@ -1,0 +1,16 @@
+<!--
+  PSML media template for png
+-->
+<document type="png" level="metadata" xmlns:t="http://pageseeder.com/psml/template">
+
+  <!-- Metadata properties --> 
+  <metadata>
+    <properties>
+      <property name="caption" title="Caption"   value="" />
+      <property name="action"  title="Action"    value="" />
+      <property name="hi-res"  title="Hi-res"    datatype="xref" />
+    </properties>
+  </metadata>
+
+</document>
+
