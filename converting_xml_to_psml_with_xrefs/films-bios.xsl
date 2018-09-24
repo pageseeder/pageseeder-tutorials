@@ -6,7 +6,7 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                               xmlns:psof="http://www.pageseeder.org/function">
 
-<xsl:output encoding="utf-8" method="text" />
+<xsl:output encoding="utf-8" method="text" media-type="text/plain" />
 
   <xsl:variable name="bios" select="document('wikipediabios.xml')" />
   <xsl:variable name="films" select="/collection" />

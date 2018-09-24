@@ -5,7 +5,7 @@
 -->
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:output encoding="utf-8" method="text" />
+<xsl:output encoding="utf-8" method="text" media-type="text/plain" />
   
   <!-- Create one file per film -->
   <xsl:template match="/">
