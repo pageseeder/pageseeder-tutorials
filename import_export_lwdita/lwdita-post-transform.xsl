@@ -55,7 +55,7 @@
     </xsl:copy>
   </xsl:template>
 
-  <!-- doun't output figure inline details -->
+  <!-- don't output figure inline details -->
   <xsl:template match="block[@label='fig']">
     <xsl:copy>
       <xsl:copy-of select="@*" />
@@ -66,11 +66,11 @@
   <!-- video to links -->
   <xsl:template match="properties-fragment[@type='video']">
     <fragment id="{@id}">
+      <xsl:apply-templates select="property[@name='desc']/markdown/node()" mode="markdown"/>
       <para>
-        <xsl:apply-templates select="property[@name='desc']/markdown/node()" mode="markdown"/>
         <xsl:for-each select="property[@name='media-source']/value">
-          <xsl:text> </xsl:text>
           <link href="{.}">Video</link>
+          <xsl:text> </xsl:text>
         </xsl:for-each>
       </para>
     </fragment>
@@ -79,11 +79,11 @@
   <!-- audio to links -->
   <xsl:template match="properties-fragment[@type='audio']">
     <fragment id="{@id}">
+      <xsl:apply-templates select="property[@name='desc']/markdown/node()" mode="markdown"/>
       <para>
-        <xsl:apply-templates select="property[@name='desc']/markdown/node()" mode="markdown"/>
         <xsl:for-each select="property[@name='media-source']/value">
-          <xsl:text> </xsl:text>
           <link href="{.}">Audio</link>
+          <xsl:text> </xsl:text>
         </xsl:for-each>
       </para>
     </fragment>

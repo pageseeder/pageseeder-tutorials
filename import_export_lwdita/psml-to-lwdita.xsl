@@ -13,22 +13,31 @@
 
 <xsl:output encoding="ascii" indent="no" method="xml" />
 
+<xsl:param name="base-folder" />
+
 <xsl:template match="/">
   <xsl:apply-templates />
 </xsl:template>
 
 <!-- ========== top level elements ========== -->
 
-<xsl:template match="document[@type='topic']">
+<xsl:template match="document[not(@type='map')]">
 <xsl:text disable-output-escaping="yes">
 &lt;!DOCTYPE topic PUBLIC "-//OASIS//DTD LIGHTWEIGHT DITA Topic//EN" "lw-topic.dtd"&gt;
 </xsl:text>
   <topic id="{substring-after(documentinfo/uri/@docid, '_')}">
-    <xsl:if test="documentinfo/uri/@title">
-      <title>
-        <xsl:sequence select="psf:text-to-keyref(documentinfo/uri/@title)" />
-      </title>
-    </xsl:if>
+    <xsl:choose>
+      <xsl:when test="section[ends-with(@id,'-title')]/heading">
+        <title>
+          <xsl:apply-templates select="section[ends-with(@id,'-title')]/heading/node()" />
+        </title>
+      </xsl:when>
+      <xsl:when test="documentinfo/uri/@title">
+        <title>
+          <xsl:sequence select="psf:text-to-keyref(documentinfo/uri/@title)" />
+        </title>
+      </xsl:when>
+    </xsl:choose>
     <xsl:if test="documentinfo/uri/description">
       <shortdesc>
         <xsl:sequence select="psf:text-to-keyref(documentinfo/uri/description)" />
@@ -36,7 +45,19 @@
     </xsl:if>
     <xsl:apply-templates select="metadata" />
     <body>
-      <xsl:apply-templates select="section" />
+      <xsl:choose>
+        <xsl:when test="@type='topic'">
+          <xsl:apply-templates select="section" mode="topic" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:variable name="content-sections" select="section[not(ends-with(@id,'-title'))]" />
+          <!-- if no fragments add at least one section -->
+          <xsl:if test="not($content-sections/fragment | $content-sections/properties-fragment[@type='citation'])">
+            <section />
+          </xsl:if>
+          <xsl:apply-templates select="$content-sections" />
+        </xsl:otherwise>
+      </xsl:choose>
     </body>
   </topic>
 </xsl:template>
@@ -57,7 +78,11 @@
       </topicmeta>
     </xsl:if>
     <xsl:apply-templates select="section[@title='Keydefs']/fragment/para" mode="keydef" />
-    <xsl:sequence select="psf:nest-topicrefs(section[@title='Topicrefs']/xref-fragment/blockxref, 0)" />
+    <!-- Handle cover content -->
+    <xsl:for-each select="section[ends-with(@id,'-title')]/fragment/blockxref[ends-with(@href,'.psml')]">
+      <topicref href="{psf:path-to-dpath(@href)}" format="dita" />
+    </xsl:for-each>
+    <xsl:sequence select="psf:nest-topicrefs(section[@title='Topicrefs' or ends-with(@id,'-xrefs')]/xref-fragment/blockxref, 0)" />
   </map>
 </xsl:template>
 
@@ -198,7 +223,18 @@
   <xref href="{concat(psf:path-to-dpath(@href),
         psf:xref-fragment-to-dfragment(@frag, @docid))}">
     <xsl:sequence select="psf:add-props(@labels)" />
-    <xsl:sequence select="psf:text-to-keyref(.)" />
+    <xsl:variable name="target-doc" select="concat('file:///',replace($base-folder, '\\', '/'),'/components/', @href)" />
+    <xsl:choose>
+      <xsl:when test="@config='citation' and doc-available($target-doc)">
+        <xsl:text>[</xsl:text>
+        <xsl:value-of select="document($target-doc)//properties-fragment[
+            @id=concat(current()/@uriid, '-', current()/@frag)]/property[@name='link-text']/@value" />
+        <xsl:text>]</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="psf:text-to-keyref(.)" />
+      </xsl:otherwise>
+    </xsl:choose>
   </xref>
 </xsl:template>
 
@@ -308,7 +344,7 @@
 </xsl:template>
 
 <xsl:template match="inline[@label]">
-  <ph props="@label">
+  <ph props="{@label}">
     <xsl:sequence select="psf:inline-to-keyref(.)" />
     <xsl:apply-templates select="node()[not(self::inline[@label='keyref'])]"/>
   </ph>
@@ -330,17 +366,28 @@
   </prolog>
 </xsl:template>
 
-<xsl:template match="section">
+<xsl:template match="section" mode="topic">
   <section>
     <xsl:if test="not(starts-with(substring-after(@id,'-'),'pss-'))">
       <xsl:attribute name="id" select="substring-after(@id,'-')" />
     </xsl:if>
-    <xsl:apply-templates />
+    <xsl:apply-templates mode="topic" />
   </section>
 </xsl:template>
 
-<xsl:template match="fragment">
+<xsl:template match="fragment" mode="topic">
   <xsl:apply-templates />
+</xsl:template>
+
+<xsl:template match="section">
+  <xsl:apply-templates />
+</xsl:template>
+
+<xsl:template match="fragment">
+  <section>
+    <xsl:attribute name="id" select="substring-after(@id,'-')" />
+    <xsl:apply-templates />
+  </section>
 </xsl:template>
 
 <xsl:template match="table">
@@ -350,7 +397,7 @@
   </simpletable>
 </xsl:template>
 
-<xsl:template match="cell">
+<xsl:template match="cell|hcell">
   <stentry>
     <xsl:apply-templates />
   </stentry>
@@ -400,9 +447,40 @@
   </ul>
 </xsl:template>
 
+<!-- ========== bibliography elements ========== -->
+
+<xsl:template match="properties-fragment[@type='citation']">
+  <section>
+    <xsl:attribute name="id" select="substring-after(@id,'-')" />
+    <p>
+      <xsl:text>[</xsl:text><xsl:value-of select="property[@name='link-text']/@value" /><xsl:text>] </xsl:text>
+      <xsl:for-each select=".//properties-fragment[@type='author' or @type='corporate-author']">
+        <xsl:if test="position() != 1">, </xsl:if>
+        <xsl:apply-templates select="." />
+      </xsl:for-each>
+      <xsl:for-each select=".//properties-fragment[not(@type='author' or
+          @type='corporate-author')]/property[not(normalize-space(@value)='')]">
+        <xsl:text>, </xsl:text>
+        <xsl:value-of select="@value" />
+      </xsl:for-each> 
+      <xsl:text>.</xsl:text>
+    </p>   
+  </section>
+</xsl:template>
+
+<xsl:template match="properties-fragment[@type='corporate-author']">
+  <xsl:value-of select="property[@name='corporate-name']/@value" />
+</xsl:template>
+
+<xsl:template match="properties-fragment[@type='author']">
+  <xsl:value-of select="concat(property[@name='first-name']/@value, ' ',
+      property[@name='middle-name']/@value, ' ',
+      property[@name='last-name']/@value)" />
+</xsl:template>
+  
 <!-- ========== multimedia elements ========== -->
 
-<xsl:template match="properties-fragment[@type='video']">
+<xsl:template match="properties-fragment[@type='video']" mode="topic">
   <video id="{substring-after(@id,'-')}">
     <xsl:if test="normalize-space(property[@name='width']/@value) != ''">
       <xsl:attribute name="width" select="property[@name='width']/@value" />      
@@ -440,7 +518,7 @@
 </xsl:template>
 
 
-<xsl:template match="properties-fragment[@type='audio']">
+<xsl:template match="properties-fragment[@type='audio']" mode="topic">
   <audio id="{substring-after(@id,'-')}">
     <xsl:if test="normalize-space(property[@name='desc']/markdown) != ''">
       <desc>
@@ -473,7 +551,8 @@
 <!-- Convert PSML path to DITA path -->
 <xsl:function name="psf:path-to-dpath">
   <xsl:param name="path" />
-  <xsl:value-of select="if (ends-with($path, '.psml')) then concat(substring-before($path, '.psml'), '.dita') else $path" />
+  <xsl:value-of select="if (starts-with($path,'#')) then '' else
+      if (ends-with($path, '.psml')) then concat(substring-before($path, '.psml'), '.dita') else $path" />
 </xsl:function>
 
 <!-- Convert PSML blockxref fragment/docid to DITA #fragment -->
@@ -489,7 +568,7 @@
 <xsl:function name="psf:xref-fragment-to-dfragment">
   <xsl:param name="frag" />
   <xsl:param name="docid" />
-  <xsl:variable name="fragment" select="substring-after($frag,'-')" />
+  <xsl:variable name="fragment" select="if (starts-with($frag,'psf-')) then substring-after($frag,'-') else $frag" />
   <xsl:if test="$fragment != 'default'">
     <xsl:value-of select="concat('#', substring-after($docid, '_'), '/', $fragment)" />
   </xsl:if>
@@ -513,7 +592,7 @@
 <!-- Nest topicrefs based on blockxref/@label -->
 <xsl:function name="psf:nest-topicrefs">
   <xsl:param name="xrefs" as="element(blockxref)*" />  
-  <xsl:param name="level" as="xs:integer" /> 
+  <xsl:param name="level" as="xs:integer" />
   <xsl:for-each-group select="$xrefs" group-adjacent="if (number(@level) gt $level) then 1 else 0">
     <xsl:variable name="current" select="current-group()[1]" />
     <xsl:variable name="previous" select="$current/preceding::blockxref[1]" />
@@ -567,7 +646,8 @@
   <xsl:param name="element" as="element()"/>
   <!-- if first element in fragment -->
   <xsl:if test="$element/parent::fragment and count($element/preceding-sibling::*) = 0">
-    <xsl:attribute name="id" select="substring-after($element/parent::fragment/@id,'-')" />
+    <xsl:variable name="fragid" select="$element/parent::fragment/@id" />
+    <xsl:attribute name="id" select="if (starts-with($fragid,'psf-')) then substring-after($fragid,'-') else $fragid" />
   </xsl:if>
 </xsl:function>
 
